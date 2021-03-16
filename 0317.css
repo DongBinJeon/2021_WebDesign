@@ -1,0 +1,89 @@
+* {
+    margin: 0; padding: 0;
+    font-size: 20px; font-weight: bold; text-align: center;
+    color: #fff;
+}
+
+#smain {
+    width: 1200px; height: 800px; position: relative;
+}
+
+
+
+#top {
+    width: 1200px; height: 100px; position: absolute;
+}
+
+.tlogo {
+    width: 300px; height: 100px; line-height: 100px;
+    position: absolute; background: brown;
+}
+
+.menu {
+    width: 900px; height: 100px; line-height: 100px;
+    position: absolute; left: 300px; background: crimson;
+}
+
+
+
+#mid1 {
+    width: 1200px; height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; top: 100px; background: darkred;
+}
+
+#mid1 img {width: 100%; display: block;}
+#mid1 h2 {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(255,255,255,0.5);
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+
+
+
+#mid2 {
+    width: 1200px; height: 250px; line-height: 250px;
+    position: absolute; top: 450px; background: red;
+}
+
+.box1 {
+    width: 400px; height: 250px; line-height: 250px;
+    position: absolute; background: darkviolet;
+}
+
+.box2 {
+    width: 400px; height: 250px; line-height: 250px;
+    position: absolute; left: 400px; background: deeppink;
+}
+
+.box3 {
+    width: 400px; height: 250px; line-height: 250px;
+    position: absolute; right: 0; background: firebrick;
+}
+
+
+
+#bottom {
+    width: 1200px; height: 100px; line-height: 100px;
+    position: absolute; bottom: 0; background: darkslateblue;
+}
+
+.blogo {
+    width: 200px; height: 100px; line-height: 100px;
+    position: absolute; background: hotpink;
+}
+
+.Cp {
+    width: 800px; height: 100px; line-height: 100px;
+    position: absolute; left: 200px; background: indianred;
+}
+
+.SNS {
+    width: 200px; height: 100px; line-height: 100px;
+    position: absolute; right: 0; background: indigo;
+}
