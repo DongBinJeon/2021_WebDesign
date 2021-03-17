@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0317_gjsh</title>
+    <style>
+        * {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+        li {list-style: none;}
+        a {color: #333; text-decoration: none;}
+        table {border-spacing: 0;}
+        .clearfix::before, .clearfix::after {display: block; content:''; clear: both;}
+
+        
+        #all {width: 1200px; height: 800px; margin: 0 auto;}
+
+        #top {text-align: center;}
+        .logo {float: left; width: 250px; height: 100px; line-height: 100px; background: red;}
+        .menu {float: right; width: 950px; height: 100px; line-height: 100px; background: orangered;}
+
+
+
+        #mid1 {height: 350px; line-height: 350px; text-align: center; background: orange;}
+
+        #mid2 {text-align: center;}
+        #mid2 > div {float: left; width: 33.333333%;}
+        .box1 {height: 250px; background: olive;}
+        .box2 {height: 250px; background: olivedrab; line-height: 250px;}
+        .box3 {height: 250px; background: yellowgreen; line-height: 250px;}
+
+        .tab-menu {padding: 10px;}
+        .tab-menu .tab-btn {}
+        .tab-menu .tab-btn ul {overflow: hidden;}
+        .tab-menu .tab-btn li {float: left; width: 160px; background: #9575cd; text-align: center; margin-right: -1px;}
+        .tab-menu .tab-btn li.active {text-decoration: underline;}
+        .tab-menu .tab-btn li a {padding: 10px; display: block; color: #fff;}
+        .tab-menu .tab-cont {padding: 20px; background: #512da8;  text-align: left;}
+
+        
+
+        #bottom {height: 100px; line-height: 100px; text-align: center;}
+        .bbox1 {float: left; width: 200px; background: skyblue;}
+        .bbox2 {float: left; width: 800px; background: blue;}
+        .bbox3 {float: left; width: 200px; background: darkblue;}
+
+    </style>
+</head>
+<body>
+    <div id="all">
+
+        <div id="top" class="clearfix">
+            <div class="logo">로고</div>
+            <div class="menu">메뉴</div>
+        </div>
+
+
+
+        <div id="mid1">
+            이미지 슬라이드
+        </div>
+
+
+
+        <div id="mid2" class="clearfix">
+            <div class="box1">
+                <div class="tab-menu">
+                    <div class="tab-btn">
+                        <ul>
+                            <li class="active"><a href="#">공지사항1</a></li>
+                            <li><a href="#">공지사항2</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <div>
+                            1. Tab Menu DESC<br>1. Tab Menu DESC<br>1. Tab Menu DESC
+                        </div>
+                        <div>
+                            2. Tab Menu DESC<br>2. Tab Menu DESC<br>2. Tab Menu DESC
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="box2">갤러리</div>
+            <div class="box3">팝업</div>
+        </div>
+
+
+
+        <div id="bottom">
+            <div class="bbox1">로고</div>
+            <div class="bbox2">Copyright</div>
+            <div class="bbox3">SNS</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var tabBtn = $(".tab-btn > ul > li");
+        var tabCont = $(".tab-cont > div");
+        
+        tabCont.hide().eq(0).show();
+        
+        tabBtn.click(function(e){
+            e.preventDefault();
+            var target = $(this);
+            var index = target.index();
+            tabBtn.removeClass("active");
+            target.addClass("active");
+            tabCont.css("display","none");
+            tabCont.eq(index).css("display","block");
+        });
+    });
+    </script>
+</body>
+</html>
