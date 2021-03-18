@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+        a {color: #333; text-decoration: none;}
+        li {list-style: none;}
+        table {border-spacing: 0;}
+        .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+        #wrap {width: 1200px; margin: 0 auto;}
+
+        #header {text-align: center;}
+        #header .logo {float: left; width: 250px; height: 100px; line-height: 100px; background: red;}
+        #header .nav {float: right; width: 950px; height: 100px; line-height: 100px; background: orangered;}
+
+        #banner {text-align: center; height: 400px; line-height: 400px; background: orange;} 
+
+        #contents {text-align: center;}
+        #contents > div {float: left; width: 33.333333%; height: 247px; line-height: 247px;}
+        #contents > div.cont1 {background: yellow;}
+        #contents > div.cont2 {background: yellowgreen;}
+        #contents > div.cont3 {background: lime;}
+
+        #footer {height: 100px; line-height: 100px; text-align: center;}
+        #footer .foot1 {float: left; width: 200px; background: skyblue;}
+        #footer .foot2 {float: left; width: 800px; background: blue;}
+        #footer .foot3 {float: left; width: 200px; background: darkblue;}
+
+        .layer {
+            display: none;
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 500px; height: 500px;
+            background: #fff;
+            border: 2px solid #000;
+            margin-left: -250px;
+            margin-top: -250px;
+            z-index: 1000;
+        }
+        .layer h2 {padding: 20px; color: #000;}
+        .layer h5 {padding: 20px; color: #000;}
+        .layer .close {
+            position: absolute; bottom: 20px; right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">로고</h1>
+            <nav class="nav">메뉴</nav>
+        </header>
+
+        <section id="banner">
+            <h2>이미지 슬라이드</h2>
+        </section>
+
+        <section id="contents" class="clearfix">
+            <div class="cont1"><h3>공지사항</h3></div>
+            <div class="cont2"><h3>갤러리</h3></div>
+            <div class="cont3"><h3 class="layerPopup">팝업</h3></div>
+        </section>
+
+        <footer id="footer">
+            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot2"><h3>Copyright</h3></div>
+            <div class="foot3"><h3>SNS</h3></div>
+        </footer>
+    </div>
+
+    <!-- 레이어 팝업 -->
+    <div class="layer">
+        <h2>타이틀</h2>
+        <h5>스포츠의 신체적 역할 : <br>
+            스포츠의 사회적 역할 : 인간의 감정과 공격성을 정화하는 역할<br>
+            스포츠의 교육적 역할 : 스포츠맨십과 페어플레이 정신으로 대표되는 스포츠 정신은 사회적 귀감이다.<br>
+            스포츠의 경제적 역할 : 주요 국제, 국내 대회 개최는 <br>
+            스포츠의 정치적 역할 : <br></h5>
+        <a href="#" class="close">닫기</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".layerPopup").click(function(e){
+            e.preventDefault();
+            $(".layer").show();
+        });
+        $(".layer .close").click(function(e){
+            e.preventDefault();
+            $(".layer").hide();
+        });
+    </script>
+</body>
+</html>
