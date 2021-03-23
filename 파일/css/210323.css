@@ -9,6 +9,7 @@ table {border-spacing: 0;}
 #content {width: 800px; float: left; background: orange;}
 
 #side .logo {width: 200px; height: 100px; line-height: 100px; background: aqua; text-align: center;}
+#side .limg {width: 200px; height: 80px; margin-top: 10px;}
 
 #side .nav {width: 200px; height: 550px; background: lightblue; text-align: center;}
 #side .nav li {text-align: center; background: #c2c2c2;}
@@ -23,7 +24,7 @@ table {border-spacing: 0;}
     width: 800px; height: 350px; text-align: center; 
     background: lightcoral; overflow: hidden;
 }
-#banner img {width: 100%; display: block;}
+#banner img {width: 800px; height: 100%; display: block;}
 #banner h2 {
     position: absolute; left: 50%; top: 50%;
     transform: translate(-50%, -50%);
@@ -40,6 +41,10 @@ table {border-spacing: 0;}
 #contents {text-align: center;}
 #contents > div {float: left; width: 33.3333%; height: 200px; line-height: 200px;}
 #contents > div.cont1 {background: lightgreen;}
+
+#contents .cont1 
+
+
 #contents > div.cont2 {background: lightsalmon;}
 #contents > div.cont3 {background: lightseagreen;}
 
