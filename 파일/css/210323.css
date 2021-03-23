@@ -1,0 +1,50 @@
+* {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+a {color: #333; text-decoration: none;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#wrap {width: 1000px; margin: 0 auto;}
+#side {width: 200px; float: left; background: red;}
+#content {width: 800px; float: left; background: orange;}
+
+#side .logo {width: 200px; height: 100px; line-height: 100px; background: aqua; text-align: center;}
+
+#side .nav {width: 200px; height: 550px; background: lightblue; text-align: center;}
+#side .nav li {text-align: center; background: #c2c2c2;}
+#side .nav li a {padding: 10px; display: block; color: #fff; background: black;}
+#side .nav li a:hover {background: slategrey;}
+#side .nav li ul.submenu {display: none;}
+#side .nav li ul.submenu li a {background: gray;}
+#side .nav li ul.submenu a:hover {background: brown;}
+
+#banner {
+    position: relative; margin: 0 auto;
+    width: 800px; height: 350px; text-align: center; 
+    background: lightcoral; overflow: hidden;
+}
+#banner img {width: 100%; display: block;}
+#banner h2 {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(5,5,5,0.5);
+    padding: 10px 30px;
+}
+
+.slider {position: relative;}
+.slider > div {position: absolute; left: 0; top: 0;}
+.slider > div img {width: 100%; height: 100%;}
+.slideList {position: absolute; top: 0; left: 0; width: 1200px; height: 350px;}
+
+#contents {text-align: center;}
+#contents > div {float: left; width: 33.3333%; height: 200px; line-height: 200px;}
+#contents > div.cont1 {background: lightgreen;}
+#contents > div.cont2 {background: lightsalmon;}
+#contents > div.cont3 {background: lightseagreen;}
+
+#footer {text-align: center; height: 100px; line-height: 100px;}
+#footer > div {width: 200px;}
+#footer .foot1 {float: left; width: 600px; background: lightslategrey;}
+#footer .foot2 {float: left; width: 200px; height: 50px; line-height: 50px; background: lightyellow;}
+#footer .foot3 {float: left; width: 200px; height: 50px; line-height: 50px; background: lightskyblue;}
