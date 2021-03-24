@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한천문대</title>
+    <style>
+        * {margin: 0; padding: 0; color: #fff;}
+        a {color: #333; text-decoration: none;}
+        li {list-style: none;}
+        .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+        
+        
+        #all {width: 1200px; margin: 0 auto;}
+
+        #header {text-align: center;}
+        #header .logo {float: left; width: 200px; height: 100px; line-height: 100px; background-color: chocolate;}
+        #header .nav {position: relative; float: right; width: 1000px; height: 100px; background-color: coral;}
+        #header .nav .menu {position: absolute; right: 0; top: 25px; width: 600px; height: 50px; line-height: 50px;}
+        #header .nav .menu > li {float: left; width: 150px; background-color: #0066ad; cursor: pointer;}
+        #header .nav .menu > li:hover {background-color: blue;}
+        #header .nav .sub {display: none; cursor: pointer;}
+        #header .nav .sub > li:hover {background-color: darkblue;}
+
+        #banner {text-align: center; height: 300px; line-height: 300px; background-color: crimson;}
+
+        #contents {text-align: center;}
+        #contents > div {float: left; width: 33.3333%;}
+        #contents > div.cont1 {width: 400px; height: 200px; background-color: darkred;}
+        #contents li {width: 100px; height: 50px; line-height: 50px; float: left;}
+
+        #contents > div.cont2 {height: 200px; line-height: 200px; background-color: maroon;}
+        #contents > div.cont3 {height: 200px; line-height: 200px; background-color: red;}
+
+        #footer {text-align: center; height: 100px; line-height: 100px;}
+        #footer > .foot1 {float: left; width: 200px; background-color: saddlebrown;}
+        #footer > .foot2 {float: right; width: 1000px; height: 50px; line-height: 50px; background-color: sienna;}
+        #footer > .foot3 {float: right; width: 1000px; height: 50px; line-height: 50px; background-color: sandybrown;}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <header id="header" class="clearfix">
+            <h3 class="logo">로고</h3>
+            <nav class="nav">
+                <ul class="menu">
+                    <li>천문대소개
+                        <ul class="sub">
+                            <li>인사말</li>
+                            <li>천문대소식</li>
+                            <li>오시는길</li>
+                        </ul>
+                    </li>
+
+                    <li>이용안내
+                        <ul class="sub">
+                            <li>프로그램</li>
+                            <li>관람시간표</li>
+                            <li>이달의별자리</li>
+                        </ul>
+                    </li>
+
+                    <li>천문대예약
+                        <ul class="sub">
+                            <li>관람예약</li>
+                            <li>예약확인</li>
+                            <li>예약취소</li>
+                        </ul>
+                    </li>
+
+                    <li>커뮤니티
+                        <ul class="sub">
+                            <li>공지사항</li>
+                            <li>방문후기</li>
+                            <li>자유게시판</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <section id="banner">
+            <h2>대한천문대 홈페이지 새단장</h2>
+        </section>
+
+        <section id="contents" class="clearfix">
+            <div class="cont1">
+                <ul class="tab">
+                    <li id="tab-header1" class="tab-active">공지사항</li>
+                    <li id="tab-header2">갤러리</li>
+                </ul>
+
+                <div>제1회 별사진 공모전 개회됩니다. <span>2020.03.14</span></div>
+                <div>하계기간 야간 연장운영합니다. <span>2020.03.14</span></div>
+                <div>청소년 대상 천문교실 안내 <span>2020.03.14</span></div>
+                <div>하늘과 바람과 별과 達 사생대회 <span>2020.03.14</span></div>
+            </div>
+            <div class="cont2"><h3>배너</h3></div>
+            <div class="cont3"><h3>바로가기</h3></div>
+        </section>
+
+        <footer id="footer">
+            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot2"><h3>하단 메뉴</h3></div>
+            <div class="foot3"><h3>Copyright</h3></div>  
+        </footer>
+    </div>
+
+    <script src="script/jquery.min_1.12.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".menu > li").on("mouseover",function(){
+                $(this).children(".sub").stop().fadeIn();
+            });
+
+            $(".menu > li").on("mouseout",function(){
+                $(this).children(".sub").stop().fadeOut(200);
+            });
+        });
+    </script>
+</body>
+</html>
