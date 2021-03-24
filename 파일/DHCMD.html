@@ -28,10 +28,27 @@
         #contents {text-align: center;}
         #contents > div {float: left; width: 33.3333%;}
         #contents > div.cont1 {width: 400px; height: 200px; background-color: darkred;}
-        #contents li {width: 100px; height: 50px; line-height: 50px; float: left;}
+        #contents li {width: 100px; height: 30px; line-height: 30px; float: left;}
 
-        #contents > div.cont2 {height: 200px; line-height: 200px; background-color: maroon;}
-        #contents > div.cont3 {height: 200px; line-height: 200px; background-color: red;}
+        #contents > div.cont2 {position: relative; height: 200px; background-color: maroon;}
+        #contents img {width: 100%; display: block;}
+        #contents div.cont2 h3 {
+            position: absolute; left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            background: rgba(255,255,255,0.5);
+            padding: 10px 30px;
+        }
+
+        #contents > div.cont3 {position: relative; height: 200px; background-color: red;}
+        #contents img {width: 100%; display: block;}
+        #contents div.cont3 h3 {
+            position: absolute; left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            background: rgba(255,255,255,0.5);
+            padding: 10px 30px;
+        }
 
         #footer {text-align: center; height: 100px; line-height: 100px;}
         #footer > .foot1 {float: left; width: 200px; background-color: saddlebrown;}
@@ -100,8 +117,16 @@
                 <div>청소년 대상 천문교실 안내 <span>2020.03.14</span></div>
                 <div>하늘과 바람과 별과 達 사생대회 <span>2020.03.14</span></div>
             </div>
-            <div class="cont2"><h3>배너</h3></div>
-            <div class="cont3"><h3>바로가기</h3></div>
+
+            <div class="cont2">
+                <h3>배너</h3>
+                <img src="img/대한천문대_img/banner.jpg" alt="#">
+            </div>
+            
+            <div class="cont3">
+                <h3>바로가기</h3>
+                <img src="img/대한천문대_img/shortcut.jpg" alt="">
+            </div>
         </section>
 
         <footer id="footer">
