@@ -15,20 +15,36 @@
         #all {width: 1200px; margin: 0 auto;}
 
         #header {text-align: center;}
-        #header .logo {float: left; width: 200px; height: 100px; line-height: 100px; background-color: chocolate;}
-        #header .nav {position: relative; float: right; width: 1000px; height: 100px; background-color: coral;}
+        #header .logo {float: left; width: 200px; height: 100px;}
+        #header img {position: relative; top: 25px;}
+
+        #header .nav {position: relative; float: right; width: 1000px; height: 100px;}
         #header .nav .menu {position: absolute; right: 0; top: 25px; width: 600px; height: 50px; line-height: 50px;}
         #header .nav .menu > li {float: left; width: 150px; background-color: #0066ad; cursor: pointer;}
         #header .nav .menu > li:hover {background-color: blue;}
         #header .nav .sub {display: none; cursor: pointer;}
         #header .nav .sub > li:hover {background-color: darkblue;}
 
-        #banner {text-align: center; height: 300px; line-height: 300px; background-color: crimson;}
+        #banner {position: relative; text-align: center; height: 300px; background-color: crimson; z-index: -10; overflow: hidden;}
+        #banner img{width: 100%; display: block; height: 300px;}
+        #banner h2 {
+            width: 500px; height: 50px; line-height: 50px;
+            position: absolute; left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .slider {position: relative;}
+        .slider > div {position: absolute; left: 0; top: 0;}
+        .slider > div {width: 100%;}
+        .slideList {position: absolute; top: 0; left: 0; width: 1200px; height: 300px;}
 
         #contents {text-align: center;}
         #contents > div {float: left; width: 33.3333%;}
         #contents > div.cont1 {width: 400px; height: 200px; background-color: darkred;}
         #contents li {width: 100px; height: 30px; line-height: 30px; float: left;}
+        #tab-body-2 {display: none;}
 
         #contents > div.cont2 {position: relative; height: 200px; background-color: maroon;}
         #contents img {width: 100%; display: block;}
@@ -50,8 +66,9 @@
             padding: 10px 30px;
         }
 
-        #footer {text-align: center; height: 100px; line-height: 100px;}
-        #footer > .foot1 {float: left; width: 200px; background-color: saddlebrown;}
+        #footer {text-align: center; height: 100px; background-color: #0066ad;}
+        #footer > .foot1 {float: left; width: 200px; height: 100px;}
+        #footer img {position: relative; top: 25px;}
         #footer > .foot2 {float: right; width: 1000px; height: 50px; line-height: 50px; background-color: sienna;}
         #footer > .foot3 {float: right; width: 1000px; height: 50px; line-height: 50px; background-color: sandybrown;}
 
@@ -62,7 +79,7 @@
 <body>
     <div id="all">
         <header id="header" class="clearfix">
-            <h3 class="logo">로고</h3>
+            <h3 class="logo"><img src="img/대한천문대_img/logo.png" alt=""></h3>
             <nav class="nav">
                 <ul class="menu">
                     <li>천문대소개
@@ -103,7 +120,13 @@
 
         <section id="banner">
             <h2>대한천문대 홈페이지 새단장</h2>
+            <div class="slideList">
+                <img src="img/대한천문대_img/img1.jpg" alt="">
+                <img src="img/대한천문대_img/img2.jpg" alt="">
+                <img src="img/대한천문대_img/img3.jpg" alt="">
+            </div>
         </section>
+
 
         <section id="contents" class="clearfix">
             <div class="cont1">
@@ -112,10 +135,18 @@
                     <li id="tab-header2">갤러리</li>
                 </ul>
 
-                <div>제1회 별사진 공모전 개회됩니다. <span>2020.03.14</span></div>
-                <div>하계기간 야간 연장운영합니다. <span>2020.03.14</span></div>
-                <div>청소년 대상 천문교실 안내 <span>2020.03.14</span></div>
-                <div>하늘과 바람과 별과 達 사생대회 <span>2020.03.14</span></div>
+                <div id="tab-body-1" class="tab-body">
+                    제1회 별사진 공모전 개회됩니다. <span>2020.03.14</span>
+                    하계기간 야간 연장운영합니다. <span>2020.03.14</span>
+                    청소년 대상 천문교실 안내 <span>2020.03.14</span>
+                    하늘과 바람과 별과 月 사생대회 <span>2020.03.14</span>
+                </div>
+
+                <div id="tab-body-2" class="tab-body">
+                    <img src="img/대한천문대_img/icon1.jpg" alt="">
+                    <img src="img/대한천문대_img/icon2.jpg" alt="">
+                    <img src="img/대한천문대_img/icon3.jpg" alt="">
+                </div>
             </div>
 
             <div class="cont2">
@@ -130,7 +161,7 @@
         </section>
 
         <footer id="footer">
-            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot1"><img src="img/대한천문대_img/logo_bottom.png" alt="#"></div>
             <div class="foot2"><h3>하단 메뉴</h3></div>
             <div class="foot3"><h3>Copyright</h3></div>  
         </footer>
@@ -146,6 +177,21 @@
             $(".menu > li").on("mouseout",function(){
                 $(this).children(".sub").stop().fadeOut(200);
             });
+
+
+
+            var currentIndex = 0;
+
+            setInterval(function(){
+                if(currentIndex < 2){
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                var slidePosition = currentIndex * (-300)+"px";
+
+                $(".slideList").animate({top : slidePosition},400);
+            },3000);
         });
     </script>
 </body>
