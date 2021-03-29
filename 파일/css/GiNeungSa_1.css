@@ -1,0 +1,58 @@
+* {margin: 0; padding: 0;}
+a {color: #333; text-decoration: none;}
+li {list-style: none;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+
+#all {width: 960px; margin: 0 auto;}
+
+#header {text-align: center;}
+#header .logo {float: left; width: 260px; height: 150px; line-height: 150px; background-color: #ffffff;}
+#header .nav {position: relative; float: right; width: 700px; height: 150px;}
+
+#header .nav .menu {position: absolute; right: 0; top: 50px; height: 50px; line-height: 50px;}
+#header .nav li {float: left; width: 200px;}
+#header .nav li a {display: block; background-color: #fff;}
+#header .nav li a:hover {text-decoration: underline;}
+#header .nav li ul.sub {display: none;}
+#header .nav li ul.sub:hover {text-decoration: underline;}
+
+#banner {position: relative; text-align: center; width: 960px; height: 400px; background-color: cadetblue; overflow: hidden; z-index: -10;}
+#banner img {float: left; height: 400px; width: 100%;}
+#banner h2 {
+    width: 500px; height: 50px; line-height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute; left: 50%; top: 50%;
+    z-index: 10;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 25px;
+    color: brown;
+}
+
+.slider {position: relative;}
+.slider > div {position: absolute; left: 0; top: 0;}
+.slider > div {width: 100%;}
+.slideList {position: absolute; top: 0; left: 0; width: 960px; height: 400px;}
+
+#contents {height: 500px; text-align: center; display: block;}
+#contents > .cont1 {position: relative; width: 960px; height: 250px; background-color: white;}
+#contents .G {float: left; width: 50%; height: 250px;}
+#contents .G > h1 {color: gray; margin-top: 10px;}
+#contents .frl {float: left; width: 480px; background-color: #fff; text-align: center; font-weight: bold;}
+#contents .fr {width: 100px; text-align: center; float: right;}
+#contents span {width: 100px; text-align: center; float: right;}
+#contents li {line-height: 34px; font-size: 14px;}
+#contents .one {background-color: gray; text-align: left;}
+#contents .two {background-color: #fff; text-align: left;}
+
+#contents .J {float: right; width: 50%; height: 250px; background-color: #fff;}
+#contents .J > h1 {color: gray; margin-top: 10px;}
+#contents .J > img {margin-top: 58px;}
+
+
+#contents > .cont2 {position: relative; width: 960px; height: 125px; background-color: #fff; margin-top: 20px;}
+#contents > .cont2 img {position: relative; left: 150px; display: block; float: left; height: 125px; margin:0px 50px;}
+
+#contents > .cont3 {width: 960px; height: 125px; background-color: dodgerblue;}
+
+#footer {text-align: center; width: 960px; height: 150px; background-color: red;}
