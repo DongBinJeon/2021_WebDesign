@@ -31,7 +31,7 @@ li {list-style: none;}
 
 .slider {position: relative;}
 .slider > div {position: absolute; left: 0; top: 0;}
-.slider > div {width: 100%;}
+.slider > div img {width: 100%;}
 .slideList {position: absolute; top: 0; left: 0; width: 960px; height: 400px;}
 
 #contents {height: 500px; text-align: center; display: block;}
@@ -42,17 +42,60 @@ li {list-style: none;}
 #contents .fr {width: 100px; text-align: center; float: right;}
 #contents span {width: 100px; text-align: center; float: right;}
 #contents li {line-height: 34px; font-size: 14px;}
-#contents .one {background-color: gray; text-align: left;}
+#contents .one {background-color: gray; text-align: left; color: #000;}
 #contents .two {background-color: #fff; text-align: left;}
+#contents a {color: #000;}
+#contents a:hover {font-weight: bold;}
 
 #contents .J {float: right; width: 50%; height: 250px; background-color: #fff;}
 #contents .J > h1 {color: gray; margin-top: 10px;}
 #contents .J > img {margin-top: 58px;}
+#contents .J > img:hover {cursor: pointer;}
 
 
 #contents > .cont2 {position: relative; width: 960px; height: 125px; background-color: #fff; margin-top: 20px;}
 #contents > .cont2 img {position: relative; left: 150px; display: block; float: left; height: 125px; margin:0px 50px;}
 
-#contents > .cont3 {width: 960px; height: 125px; background-color: dodgerblue;}
+#contents > .cont3 {width: 960px; height: 125px;}
+#contents > .cont3 div {
+    position: relative; float: left; left: 210px;
+    display: block;
+    height: 50px; line-height: 50px;
+    width: 210px;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+}
 
-#footer {text-align: center; width: 960px; height: 150px; background-color: red;}
+#contents > .cont3 li {float: left; background-color: rgba(0,0,0,0.7); border-radius: 10px;}
+#contents > .cont3 li a {color: #fff;}
+#contents > .cont3 li:hover {background-color: brown;}
+#contents .new {margin-left: 215px; padding: 3px 10px;}
+#contents .music {margin-left: 145px; padding: 3px 20px;}
+#contents .menur {margin-left: 110px; padding: 3px 20px;}
+
+#footer {position: relative; width: 960px; height: 150px; background-color: #4298cc;}
+#footer > .bl {position: absolute; left: 30px;}
+#footer  .blli {float: left; margin: 50px 15px;}
+#footer  li a {color: #fff;}
+#footer  li a:hover {text-decoration: underline;}
+
+#footer > .br {position: absolute; left: 480px; margin: 10px; color: #fff; font-size: 14px;}
+
+
+.layer_bg {
+    display: none;
+    width: 100%; height: 100%; background-color: rgba(0,0,0,0.8);
+    position: fixed; left: 0; top: 0; z-index: 900;
+}
+
+.layer {
+    width: 500px; height: 500px; background-color: #ccc;
+    border: solid 2px #000;
+    position: absolute; left: 50%; top: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+}
+
+.layer h2 {padding: 20px; font-size: 30px;}
+.layer .close {position: absolute; bottom: 20px; right: 30px; font-size: 20px;}

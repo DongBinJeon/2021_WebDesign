@@ -50,17 +50,17 @@
                 <div class="G">
                     <h1>공지사항</h1>
                     <ul class="notice">
-                        <li class="frl">내용<span class="fr">날짜</span></li>
-                        <li class="one">다도해 풍광을 한눈에...해남 땅끝 해안누리길 여행하기 <span>2018-01-10</span></li>
-                        <li class="two">국토순례 기차여행에 참가하는 학교, 청소년 단체 등... <span>2017-12-21</span></li>
-                        <li class="one">설악산 1월초 설경 절정, 기차 여행 상품이 출시되었.. <span>2017-12-15</span></li>
-                        <li class="two">여행가이드가 추천하는 국내 겨울여행지 & 관광열차 <span>2017-12-07</span></li>
-                        <li class="one">신나는 겨울여행 대관령 눈꽃축제, 고니골 빛죽제로... <span>2017-12-01</span></li>
+                        <li class="frl"><a href="#">내용<span class="fr">날짜</span></a></li>
+                        <li class="one"><a href="#">다도해 풍광을 한눈에...해남 땅끝 해안누리길 여행하기 <span>2018-01-10</span></a></li>
+                        <li class="two"><a href="#">국토순례 기차여행에 참가하는 학교, 청소년 단체 등... <span>2017-12-21</span></a></li>
+                        <li class="one"><a href="#">설악산 1월초 설경 절정, 기차 여행 상품이 출시되었.. <span>2017-12-15</span></a></li>
+                        <li class="two"><a href="#">여행가이드가 추천하는 국내 겨울여행지 & 관광열차 <span>2017-12-07</span></a></li>
+                        <li class="one"><a href="#">신나는 겨울여행 대관령 눈꽃축제, 고니골 빛죽제로... <span>2017-12-01</span></a></li>
                     </ul>
                 </div>
                 <div class="J">
                     <h1>정보나눔</h1>
-                    <img src="img/기능사 1회_img/info.png" alt="#">
+                    <img src="img/기능사 1회_img/info.png" alt="#" class="ad">
                 </div>
             </div>
             <div class="cont2">
@@ -69,14 +69,36 @@
                 <img src="img/기능사 1회_img/여행매뉴얼.png" alt="#">
             </div>
             <div class="cont3">
-
-
-                
+                <ul>
+                    <li class="new"><a href="#">새소식</a></li>
+                    <li class="music"><a href="#">여행음악</a></li>
+                    <li class="menur"><a href="#">여행매뉴얼</a></li>
+                </ul>
             </div>
         </section>
 
-        <footer id="footer"></footer>
+        <footer id="footer">
+            <ul class="bl">
+                <li class="blli"><a href="#">법적고지</a></li>
+                <li class="blli"><a href="#">개인정보취급방침</a></li>
+                <li class="blli"><a href="#">개인정보처리방침</a></li>
+            </ul>
 
+            <ul class="br">
+                <li class="brli">상호명:(주)앤윤컴퍼니</li>
+                <li class="brli">대표자:윤정우</li>
+                <li class="brli">개인정보관리책임자:김선정</li>
+                <li class="brli">상담전화:1588-0789</li>
+                <li class="brli">사업장주소:서울특별시 금천구 가산동 디지털2로</li>
+            </ul>
+        </footer>
+
+        <div class="layer_bg">
+            <div class="layer">
+                <h2>타이틀</h2>
+                <a href="#" class="close">닫기</a>
+            </div>
+        </div>
     </div>
 
 
@@ -103,6 +125,15 @@
 
                 $(".slideList").animate({left : slidePosition},400);
             },3000);
+
+
+            $(".ad").click(function(){
+                $(".layer_bg").css("display","block");
+            });
+
+            $(".layer .close").click(function(){
+                $(".layer_bg").css("display","none");
+            });
 
         });
     </script>

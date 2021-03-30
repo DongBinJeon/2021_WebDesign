@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/GiNeungSa_2.css">
+</head>
+<body>
+    <div id="all">
+        <header id="header" class="clearfix">
+            <div class="logo">
+                <h3>로고</h3>
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#">DD 소개</a></li>
+                    <li><a href="#">빵 만들기</a>
+                        <ul class="submenu">
+                            <li><a href="#">제빵 재료</a></li>
+                            <li><a href="#">제빵 도구</a></li>
+                            <li><a href="#">제빵 포장재료</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">나만의 레시피</a></li>
+                            <li><a href="#">내가 만든 빵</a></li>
+                            <li><a href="#">제빵 노하우</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section id="banner">
+            <div class="box">
+                <h1>베이커리 카페</h1><br>
+                <p>
+                    <h3>세상에 하나뿐인 베이커리</h3>
+                </p>
+            </div>   
+            
+            <div class="slideList">
+                <img src="img/기능사 2회_img/images(1).jpg" alt="#">
+                <img src="img/기능사 2회_img/images(2).jpg" alt="#">
+                <img src="img/기능사 2회_img/images(3).jpg" alt="#">
+                <img src="img/기능사 2회_img/images(4).jpg" alt="#">
+                <img src="img/기능사 2회_img/images(5).jpg" alt="#">
+            </div>
+        </section>
+
+
+
+        <section id="contents">
+            <div class="cont1">
+                <div class="G">
+                    <h2>공지사항</h2>
+                    <ul class="notice">
+                        <li class="nl">내용<span class="nr">날짜</span></li>
+                    </ul>
+                </div>
+                <div class="P"></div>
+            </div>
+            <div class="cont2"></div>
+            <div class="cont3"></div>
+        </section>
+
+
+
+        <footer id="footer"></footer>
+
+
+    </div>
+
+    <script src="script/jquery.min_1.12.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".menu > li").on("mouseover",function(){
+                $(this).children(".submenu").stop().fadeIn();
+            });
+            
+            $(".menu > li").on("mouseout",function(){
+                $(this).children(".submenu").stop().fadeOut();
+            });
+            
+            
+            var currentIndex = 0;
+
+            setInterval(function(){
+                if(currentIndex < 4){
+                    currentIndex++;
+                }else{
+                    currentIndex = 0;
+                }
+
+                var slidePosition = currentIndex * (-400)+"px";
+
+                $(".slideList").animate({top : slidePosition},3000)
+            },0);
+
+        });
+    </script>
+</body>
+</html>
