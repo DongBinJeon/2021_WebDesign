@@ -15,7 +15,7 @@ li {list-style: none;}
 
 
 
-#banner {position: relative; width: 960px; height: 400px; background-color: turquoise; overflow: hidden;}
+#banner {position: relative; width: 960px; height: 400px; background-color: turquoise; overflow: hidden; z-index: -10;}
 #banner img {width: 100%; height: 400px; display: block;}
 #banner .box {
     z-index: 10;
@@ -36,11 +36,54 @@ li {list-style: none;}
 
 
 #contents {width: 960px; height: 500px; text-align: center;}
-#contents .cont1 {height: 200px; background-color: violet;}
-#contents .G {float: left; width: 480px; height: 200px; background-color: chartreuse;}
-#contents .P {float: right; width: 480px; height: 200px; background-color: lime;}
+#contents .cont1 {height: 200px;}
+#contents .G {float: left; width: 480px; height: 200px;}
+#contents .G > h2 {margin-top: 5px; width: 480px;}
+#contents .nl {width: 480px; text-align: center; font-weight: bold; border-top: solid 1px;}
+#contents .nr {width: 100px; float: right; font-weight: bold;}
+#contents .one {background-color: greenyellow; width: 470px; text-align: left; font-size: 14px;}
+#contents .two {background-color: #fff; width: 470px; text-align: left; font-size: 14px;}
+#contents span {text-align: center; float: right;}
+#contents .cont1 li {padding: 4px;}
+#contents .cont1 li:hover {font-weight: bold; cursor: pointer;}
 
-#contents .cont2 {height: 150px; background-color: thistle;}
-#contents .cont3 {height: 150px; background-color: wheat;}
 
-#footer {width: 960px; height: 150px; background-color: aquamarine;}
+#contents .P {float: right; width: 480px; height: 200px;}
+#contents .P img {display: block; position: relative; left: 20%;}
+#contents .Bimg {width: 360px; height: 125px; z-index: 15; cursor: pointer;}
+
+#contents .cont2 {height: 200px; position: relative;}
+#contents .cont2 img {position: relative; float: left; left: 200px; top: 60px; height: 150px; margin: 0px 20px;}
+
+#contents .cont3 {height: 100px; background-color: #fff;}
+#contents .cont3 ul {position: relative; width: 600px; height: 100px; margin: 0px 180px;}
+#contents .cont3 li {
+    float: left; width: 110px; height: 40px; line-height: 40px;
+    margin-top: 30px; margin-left: 55px; margin-right: 10px; padding: 0px 7px;
+    color: #fff;
+    background-color: #bb692d;
+    border-radius: 5px;
+}
+#contents .cont3 li:hover {background-color: brown; cursor: pointer;}
+
+#footer {position: relative; width: 960px; height: 150px; background-color: #bb692d;}
+#footer .bl {float: left; height: 80px; margin: 35px 25px; color: #fff; font-size: 14px;}
+#footer .blli {float: left; padding: 10px 10px;}
+#footer .br {position: relative; left: 120px; height: 130px; color: #fff; font-size: 14px; padding: 10px;}
+
+.layer_bg {
+    display: none;
+    width: 100%; height: 100%; background-color: rgba(0,0,0,0.8);
+    position: fixed; left: 0; top: 0; z-index: 900;
+}
+
+.layer {
+    width: 500px; height: 500px; background-color: #ccc;
+    border: solid 2px #000;
+    position: absolute; left: 50%; top: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+}
+
+.layer h2 {padding: 20px; font-size: 30px;}
+.layer .close {position: absolute; bottom: 20px; right: 30px; font-size: 20px;}

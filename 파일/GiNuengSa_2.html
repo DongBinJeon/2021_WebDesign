@@ -62,17 +62,60 @@
                     <h2>공지사항</h2>
                     <ul class="notice">
                         <li class="nl">내용<span class="nr">날짜</span></li>
+                        <li class="one">제1회 DD 베이커리 워크숍에 초대합니다(서울권). <span>2017-12-12</span></li>
+                        <li class="two">올림픽공원 카페 초보 여성 창업을 추천받습니다. <span>2017-12-10</span></li>
+                        <li class="one">맛과 영양, 환경문제까지 생각하는 베이커리! <span>2018-03-09</span></li>
+                        <li class="two">고품질 크림으로 만든 디저트로 달콤하게 겨울나기 <span>2018-03-07</span></li>
+                        <li class="one">온가족이 함께 즐기는 베이킹 체험 교실 <span>2018-03-05</span></li>
                     </ul>
                 </div>
-                <div class="P"></div>
+                <div class="P">
+                    <h2>Partner</h2>
+
+                    <img src="img/기능사 2회_img/PARTNER.jpg" alt="#">
+                    <img src="img/기능사 2회_img/PARTNER_UP.png" alt="#" class="Bimg">
+                </div>
             </div>
-            <div class="cont2"></div>
-            <div class="cont3"></div>
+            <div class="cont2">
+                <img src="img/기능사 2회_img/icon1.png" alt="#">
+                <img src="img/기능사 2회_img/icon2.png" alt="#">
+                <img src="img/기능사 2회_img/icon3.png" alt="#" class="thimg">
+            </div>
+            <div class="cont3">
+                <ul>
+                    <li>고수의 레시피</li>
+                    <li>모임 일정</li>
+                    <li>식품안전관리</li>
+                </ul>
+            </div>
         </section>
 
 
 
-        <footer id="footer"></footer>
+        <footer id="footer">
+                <ul class="bl">
+                    <li class="blli">법적고지</li>
+                    <li class="blli">개인정보취급방침</li>
+                    <li class="blli">개인정보처리방침</li>
+                </ul>
+
+                <ul class="br">
+                    <li class="brli">사업자번호:228-81-03754</li>
+                    <li class="brli">상호명:(주)디디베이커리</li>
+                    <li class="brli">대표자:다진</li>
+                    <li class="brli">개인정보관리책임자:윤준우</li>
+                    <li class="brli">상담전화:1588-0789</li>
+                    <li class="brli">사업장주소:서울특별시 금천구 가산동 가산디지털2로</li>
+                    <li class="brli">E-mail : master@ddbb.com</li>
+                </ul>
+        </footer>
+
+        <div class="layer_bg">
+            <div class="layer">
+                <h2>타이틀</h2>
+                <a href="#" class="close">닫기</a>
+            </div>
+        </div>
 
 
     </div>
@@ -102,6 +145,14 @@
 
                 $(".slideList").animate({top : slidePosition},3000)
             },0);
+
+            $(".Bimg").click(function(){
+                $(".layer_bg").css("display","block");
+            });
+
+            $(".layer .close").click(function(){
+                $(".layer_bg").css("display","none");
+            });
 
         });
     </script>
