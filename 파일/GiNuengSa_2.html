@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>웹디자인기능사 2회</title>
     <link rel="stylesheet" href="css/GiNeungSa_2.css">
 </head>
 <body>
@@ -46,11 +46,11 @@
             </div>   
             
             <div class="slideList">
-                <img src="img/기능사 2회_img/images(1).jpg" alt="#">
-                <img src="img/기능사 2회_img/images(2).jpg" alt="#">
-                <img src="img/기능사 2회_img/images(3).jpg" alt="#">
-                <img src="img/기능사 2회_img/images(4).jpg" alt="#">
-                <img src="img/기능사 2회_img/images(5).jpg" alt="#">
+                <img src="img/기능사 2회_img/images(1).jpg" alt="#" class="one">
+                <img src="img/기능사 2회_img/images(2).jpg" alt="#" class="two">
+                <img src="img/기능사 2회_img/images(3).jpg" alt="#" class="three">
+                <img src="img/기능사 2회_img/images(4).jpg" alt="#" class="four">
+                <img src="img/기능사 2회_img/images(5).jpg" alt="#" class="five">
             </div>
         </section>
 
@@ -83,7 +83,7 @@
             </div>
             <div class="cont3">
                 <ul>
-                    <li>고수의 레시피</li>
+                    <li><a href="https://youtu.be/HI8DlDs1gko" target="_blank"> 고수의 레시피</a></li>
                     <li>모임 일정</li>
                     <li>식품안전관리</li>
                 </ul>
@@ -110,10 +110,11 @@
                 </ul>
         </footer>
 
-        <div class="layer_bg">
-            <div class="layer">
-                <h2>타이틀</h2>
-                <a href="#" class="close">닫기</a>
+        <div class="popup_bg">
+            <div class="popup">
+                <a href="https://youtu.be/abPCcWj5sew" target="_blank">영상 보러가기</a><br>
+                <img src="img/팝업배너테스트이미지_2.jpg" alt="#">
+                <h3 class="close">닫기</h3>
             </div>
         </div>
 
@@ -141,18 +142,20 @@
                     currentIndex = 0;
                 }
 
-                var slidePosition = currentIndex * (-400)+"px";
+                var slidePosition = currentIndex * (960)+"px";
 
-                $(".slideList").animate({top : slidePosition},3000)
+                $(".slideList").animate({left : slidePosition},3000)
             },0);
 
-            $(".Bimg").click(function(){
-                $(".layer_bg").css("display","block");
+
+            $(".Bimg").on("click",function(){
+                $(".popup_bg").css("display", "block")
             });
 
-            $(".layer .close").click(function(){
-                $(".layer_bg").css("display","none");
+            $(".close").on("click",function(){
+                $(".popup_bg").css("display", "none")
             });
+            
 
         });
     </script>

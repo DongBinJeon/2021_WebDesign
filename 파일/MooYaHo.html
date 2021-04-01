@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0; color: #fff;}
+        a {color: #333; text-decoration: none;}
+        li {list-style: none;}
+
+        #all {position: absolute; width: 100%; margin: 0 auto;}
+
+        #header {width: 100%; height: 200px; line-height: 200px; background-color: #000; text-align: center;}
+
+        #banner {position: relative; width: 100%; height: 400px; background-color: #222; overflow: hidden;}
+        #banner img {width: 100%; height: 400px;}
+
+        .slider {position: relative;}
+        .slider > div {position: absolute; top: 0; left: 0;}
+        .slider > img {width: 100%;}
+        .slideList {position: absolute; left: 50%; top: 0; transform: translate(-50%, 0%); width: 960px; height: 400px;}
+
+        #contents {width: 100%; height: 200px; background-color: #444;}
+        #contents a {color: #fff; }
+
+        #footer {width: 100%; height: 200px; background-color: #666;}
+        #footer .M {position: relative; left: 30px; top: 50px;}
+        #footer li {float: left; width: 250px; text-decoration: underline;}
+        #footer .time {text-align: left;}
+
+    </style>
+</head>
+<body>
+    <div id="all">
+        <header id="header">
+            <h1>무 야 호 ~</h1>
+        </header>
+
+        <section id="banner">
+            <div class="slideList">
+                <img src="img/무야호_img/A.PNG" alt="#">
+                <img src="img/무야호_img/B.PNG" alt="#">
+                <img src="img/무야호_img/C.PNG" alt="#">
+                <img src="img/무야호_img/D.PNG" alt="#">
+                <img src="img/무야호_img/E.PNG" alt="#">
+                <img src="img/무야호_img/F.PNG" alt="#">
+                <img src="img/무야호_img/G.PNG" alt="#">
+            </div>
+        </section>
+
+        <section id="contents">
+            <a href="https://youtu.be/abPCcWj5sew">영상 보러가기</a>
+        </section>
+
+
+
+        <footer id="footer">
+            <ul class="M">
+                <li>title - MooYaHo~</li>
+                <li>Web Manager - 전동빈</li> <br> <br>
+                <li class="time">만들기 시작한 시간 : AM 9:50</li>
+                <li class="time">다 만든 시간 : </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="script/jquery.min_1.12.4.js"></script>
+    <script>
+        var currentIndex = 0;
+
+        setInterval(function(){
+            if(currentIndex < 6){
+                currentIndex++;
+            }else {
+                currentIndex = 0;
+            }
+
+            var slidePosition = currentIndex * (-404)+"px";
+            $(".slideList").animate({top : slidePosition},400)
+        },3000);
+
+
+    </script>
+</body>
+</html>
