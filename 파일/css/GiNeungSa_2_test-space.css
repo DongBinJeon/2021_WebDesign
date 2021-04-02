@@ -1,0 +1,93 @@
+* {margin: 0; padding: 0; color: #666666;}
+a {text-decoration: none;}
+li {list-style: none;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#all {width: 960px; margin: 0 auto;}
+
+#header {width: 960px; height: 130px; background-color: #fff;}
+#header .logo {float: left; text-align: center; width: 260px; height: 130px; line-height: 130px;}
+#header .nav {position: relative; float: right; width: 700px; height: 130px;}
+#header .menu {position: relative; top: 40px; left: 100px; width: 600px; height: 50px; line-height: 50px; background-color: #fff;}
+#header .menu li {display: block; float: left; width: 200px; text-align: center;}
+#header .menu li a {color: #000;}
+#header .sub {display: none;}
+#header .sub li {background-color: beige;}
+#header .sub a {text-decoration: underline;}
+
+#banner {position: relative; width: 960px; height: 400px; background-color: royalblue; overflow: hidden; z-index: -10;}
+#banner img {width: 100%; height: 400px; float: right;}
+#banner .tw {margin-right: -1920px;}
+#banner .th {margin-right: -2880px;}
+#banner .fo {margin-right: -3840px;}
+#banner .fi {margin-right: -4800px;}
+
+#banner .box {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+#banner h1 {color: #bb692d;}
+
+.slider {position: relative;}
+.slider > div {position: absolute; left: 0; top: 0;}
+.slider > img {width: 100%;}
+.slideList {position: absolute; left: 0; top: 0; width: 960px; height: 400px;}
+
+
+#contents {width: 960px; height: 500px; background-color: #fff;}
+#contents .cont1 {width: 960px; height: 250px;}
+#contents h2 {margin-top: 20px; text-align: center; color: #000;}
+#contents .G {position: relative; float: left; width: 480px; height: 250px; background-color: #fff;}
+#contents .notice {position: relative; width: 480px; height: 200px;}
+#contents .notice span {float: right; width: 100px; text-align: center;}
+#contents .notice li {float: left; line-height: 30px;}
+#contents .m_line {float: left; width: 480px; text-align: center; background-color: #fff; font-weight: bold; border-top: 1px solid;}
+#contents .m_span {float: right; width: 100px; text-align: center;}
+#contents .one {margin-left: 10px; width: 460px; text-align: left; background-color: olivedrab; font-size: 14px;}
+#contents .two {margin-left: 10px; width: 460px; text-align: left; background-color: #fff; font-size: 14px;}
+#contents .G li:hover {font-weight: bold;}
+#contents .one:hover {text-decoration: underline; cursor: pointer;}
+#contents .two:hover {text-decoration: underline; cursor: pointer;}
+
+#contents .P {float: right; width: 480px; height: 250px;}
+#contents .P img {margin-left: 100px;}
+#contents .popup_img {height: 130px;}
+#contents .popup_img:hover {cursor: pointer;}
+
+#contents .cont2 {position: relative; width: 960px; height: 150px;}
+#contents .img_box {position: relative; width: 600px; left: 50%; top: 40px; transform: translate(-50%, 0%);}
+#contents .oimg {height: 150px; margin-left: 40px;}
+#contents .timg {height: 150px; margin-left: 23px;}
+#contents .thimg {height: 150px; margin-left: 15px;}
+
+#contents .cont3 {width: 960px; height: 100px;}
+#contents .cont3 ul {position: relative; top: 40px; left: 165px; width: 600px;}
+#contents .cont3 li {background-color: #7b422e; color: #fff; padding: 10px; border-radius: 5px; float: left; margin-left: 70px;}
+
+#footer {position: relative; width: 960px; height: 150px; background-color: sienna;}
+#footer .fl {float: left;}
+#footer .flli {float: left; color: #fff; margin-top: 30px; margin-left: 30px;}
+#footer .fr {float: right; position: relative; right: 130px; top: 10px;}
+#footer .fr li {color: #fff; font-size: 14px;}
+
+.popup_bg {
+    position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8);
+    left: 0; top: 0; display: none;
+}
+
+.popup {
+    position: absolute; width: 700px; height: 500px; background-color: #fff;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.popup h3 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 250px; height: 50px; line-height: 50px; background-color: bisque;}
+
+.close {
+    position: absolute; bottom: 20px; right: 20px;
+}
+

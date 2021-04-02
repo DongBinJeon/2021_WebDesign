@@ -1,36 +1,92 @@
-* {margin: 0; padding: 0; color: #fff;}
+* {margin: 0; padding: 0; color: #666666;}
 a {color: #333; text-decoration: none;}
 li {list-style: none;}
 .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
 
 #all {width: 1000px; margin: 0 auto;}
 
-#header {width: 1000px; height: 180px; text-align: center;}
-#header .logo {position: relative; float: left; width: 200px; height: 180px;}
-#header .logo img {position: relative; margin: 10px; height: 100px;}
+#header {width: 1000px; height: 180px; background-color: #fff;}
+#header .logo {position: relative; float: left; width: 300px; height: 180px;}
+#header .logo img {position: relative; top: 40px;}
 
-#header .nav {position: relative; float: right; width: 800px; height: 180px;}
-#header .menu {position: absolute; right: 0; top: 20px; width: 600px; height: 50px; line-height: 50px;}
-#header .menu li {float: left; width: 200px;}
-#header .menu li a {display: block; background-color: #fff;}
-#header .menu li a:hover {text-decoration: underline;}
+#header .nav {position: relative; float: right; width: 700px; height: 180px;}
+#header .menu {position: relative; left: 100px; top: 30px; width: 600px; height: 50px; line-height: 50px;}
+#header .menu > li {float: left; width: 200px; text-align: center; background-color: lightgray;}
+#header .menu li:hover {background-color: gray;}
 #header .sub {display: none;}
+#header .sub li {background-color: #fff;}
+#header .sub li a {text-decoration: underline;}
 
-#banner {position: relative; width: 1000px; height: 350px; background-color: #444;}
-#banner img {width: 100%; float: left; display: block;}
-#banner h3 {
-    width: 250px; height: 40px; line-height: 40px; text-align: center;
+#banner {position: relative; width: 1000px; height: 350px; background-color: #000; overflow: hidden;}
+#banner img {width: 100%; display: block; float: right;}
+#banner .itwo {margin-right: -2000px;}
+#banner .ithree {margin-right: -3000px;}
+#banner h2 {
     position: absolute; left: 50%; transform: translate(-50%, 0%);
-    background-color: rgba(255,255,255,0.5); color: honeydew;
+    background-color: rgba(255,255,255,0.3);
+    width: 250px; text-align: center;
+    color: #c2c2c2;
+}
+.slider {position: relative;}
+.slider > div {position: absolute; top: 0; left: 0;}
+.slider > img {width: 100%;}
+.slideList {position: absolute; left: 0; top: 0; width: 1000px; height: 400px;}
+
+#banner ul {width: 100px; position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, 0%);}
+#banner li {float: left; width: 50px;}
+#banner li:hover {cursor: pointer;}
+#banner .right {color: #000;}
+
+#contents {width: 1000px; height: 500px;}
+#contents .cont1 {position: relative; width: 1000px; height: 250px;}
+#contents .cont1 li:hover {font-weight: bold; cursor: pointer;}
+#contents .G {float: left; width: 500px; height: 250px; background-color: #fff;}
+#contents .G h1 {text-align: center; margin-top: 10px;}
+#contents .notice {position: relative; top: 10px; width: 480px; height: 200px; border-top: solid 1px; padding: 10px;}
+#contents .notice li {padding: 3px; float: left;}
+#contents .notice span {width: 100px; float: right; text-align: center;}
+#contents .main_line {width: 480px; text-align: center; font-weight: bold;} #contents .main_span {width: 100px; float: right; text-align: ;}
+#contents .one {width: 470px; background-color: lightpink;}
+#contents .one:hover {text-decoration: underline;}
+#contents .two {width: 470px; background-color: #fff;}
+#contents .two:hover {text-decoration: underline;}
+
+#contents .P {float: right; width: 500px; height: 250px;}
+#contents .P h1 {text-align: center; margin-top: 10px;}
+#contents .P img {position: relative; left: 100px; display: block;}
+#contents .popup_img {cursor: pointer;}
+
+#contents .cont2 {position: relative; width: 1000px; height: 150px;}
+#contents .cont2 img {position: relative; height: 130px; margin-left: 65px;}
+#contents .box {position: relative; margin: 30px 160px;}
+
+
+#contents .cont3 {width: 1000px; height: 100px;}
+#contents .b {width: 1000px; height: 100px; margin: 0px 200px;}
+#contents .b li {
+    float: left; background-color: #CC9999; text-align: center; border-radius: 5px;
+    width: 90px; height: 40px; line-height: 40px; margin-left: 45px; margin-right: 65px;
+    color: #fff;
 }
 
+#footer {position: relative; width: 1000px; height: 150px; background-color: #996699;}
+#footer .flul {float: left; position: relative; top: 15px; left: 20px;}
+#footer .flli {color: #fff; float: left; padding: 10px 15px; text-align: center;}
+#footer .frul {float: right; position: relative; right: 170px; top: 20px;}
+#footer .frul li {color: #fff; font-size: 14px;}
 
-#banner .slideList > img {float: left;}
+.layer_bg {
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);
+    display: none;
+}
 
-#banner ul {position: absolute; left: 50%; transform: translate(-50%, 0%); bottom: 0; width: 100px; height: 50px;}
-#banner li {float: left; width: 40px;}
-#banner .right-b a {color: #000;}
+.popup {
+    width: 500px; height: 300px; background-color: #fff;
+    position: relative; left: 50%; top: 20%; transform: translate(-50%, -20%);
+}
 
-#contents {width: 1000px; height: 500px; background-color: #666;}
+.popup h1 {position: relative; left: 20px; top: 10px;}
 
-#footer {width: 1000px; height: 150px; background-color: #888;}
+.close {position: absolute; bottom: 20px; right: 30px;}
+.close a {position: relative;}
