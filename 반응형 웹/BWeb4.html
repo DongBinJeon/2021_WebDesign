@@ -20,29 +20,30 @@
         #two .top {position: relative; width: 100%; height: 150px; background-color: steelblue;}
         #two .bottom {position: relative; width: 100%; height: 150px; background-color: rgb(90, 160, 218);}
         
+        #three {overflow: hidden; width: 100%; height: 200px;}
         #three > div {float: left; width: 33.333%; height: 200px;}
         #three .ton {background-color: rgb(164, 164, 248);}
         #three .ttw {background-color: rgb(135, 135, 204);}
         #three .tth {background-color: rgb(120, 120, 185);}
 
-        #four {width: 90%; height: 200px; padding: 5%; background-color: rgb(61, 239, 245);}
-        #four .fdiv {float: left; width: 20%; height: 170px; margin: 1%; border-radius: 5px; background-color: blue;}
+        #four {width: 100%; height: 200px; padding: 5% 0%; background-color: rgb(61, 239, 245); overflow: hidden;}
+        #four .fdiv {float: left; width: 20%; height: 200px; margin-left: 4%; margin-top: 1%; border-radius: 5px; background-color: blue;}
 
         footer {width: 100%; height: 50px; background-color: cornflowerblue;}
 
         
         @media (max-width: 1200px){
             #wrap {width: 100%;}
-            .fdiv {width: 23%;}
         }
 
         @media (max-width: 768px){
             #two .left {display: none;}
             #two .right {width: 100%;}
             #three {width: 100%;}
-            #three > div:nth-child(3) {display: none; width: 100%;}
-            .fdiv:nth-child(1) {display: none;}
-
+            #three > div {width: 50%;}
+            #four {width: 100%;}
+            #four .fdiv {width: 25%;}
+            #four .fdiv:nth-child(4) {display: none;}
         }
 
         @media (max-width: 480px){
@@ -67,10 +68,13 @@
             <div class="tth"></div>
         </section>
         <section id="four">
-            <div class="fdiv"></div>
-            <div class="fdiv"></div>
-            <div class="fdiv"></div>
-            <div class="fdiv"></div>
+            <div>
+                <div class="fdiv"></div>
+                <div class="fdiv"></div>
+                <div class="fdiv"></div>
+                <div class="fdiv"></div>
+            </div>
+            
         </section>
         <footer></footer>
     </div>
