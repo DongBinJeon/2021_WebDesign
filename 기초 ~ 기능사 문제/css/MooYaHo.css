@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; color: #fff;}
+a {color: #333; text-decoration: none;}
+li {list-style: none;}
+
+#all {position: absolute; width: 100%; margin: 0 auto;}
+
+#header {width: 100%; height: 150px; line-height: 150px; background-color: #000; text-align: center;}
+
+#banner {position: relative; width: 100%; height: 400px; background-color: #222; overflow: hidden;}
+#banner img {width: 100%; height: 400px;}
+
+.slider {position: relative;}
+.slider > div {position: absolute; top: 0; left: 0;}
+.slider > img {width: 100%;}
+.slideList {position: absolute; left: 50%; top: 0; transform: translate(-50%, 0%); width: 960px; height: 400px;}
+
+#contents {position: relative; width: 100%; height: 200px; background-color: #444;}
+#contents > div {
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 170px; height: 50px; line-height: 50px; text-align: center;
+    background-color: black;
+}
+#contents > div:hover {opacity: 60%;}
+
+#contents a {color: #fff;}
+#contents a:hover {text-decoration: underline;}
+
+#footer {width: 100%; height: 200px; background-color: #666;}
+#footer .M {position: relative; left: 30px; top: 50px;}
+
