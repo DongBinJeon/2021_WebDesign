@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; color: #333333;}
+a {text-decoration: none;}
+li {list-style: none;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+body {background-color: rgb(225, 248, 236);}
+
+#all {width: 1200px; margin: 0 auto;}
+
+#header {width: 1365px; height: 100px; margin: 0 auto;}
+#header .logo {float: left; width: 20%; height: 100px;}
+#header .logo img {width: 100%; height: 100%;}
+
+#header .nav {position: relative; float: right; width: 80%; height: 100px; background-color: rgb(170, 230, 198);}
+#header .menu {position: absolute; right: 25px; top: 25px;}
+#header .menu li {float: left; width: 150px; height: 50px; line-height: 50px; text-align: center; background-color: rgb(124, 228, 171);}
+#header .menu li a {color: #000;}
+#header .menu li:hover {cursor: pointer; background-color: rgb(127, 243, 179); transition: 1s;}
+#header .sub {display: none;}
+
+#banner {width: 1200px; height: 300px; overflow: hidden;}
+#banner img {width: 100%; height: 300px; display: block;}
+
+#contents {text-align: center;}
+#contents > div {float: left; width: 400px; height: 200px;}
+#contents .cont1 {position: relative; background-color: #ffffff;}
+#contents .active {background-color: mediumseagreen !important; font-weight: bold;}
+#contents .hide {display: none;}
+
+#contents .tab-header li {color: #000; width: 400px; height: 25px; line-height: 25px; text-align: center;}
+#contents .GOB-body li {color: #000;}
+#contents .one {float: left; width: 400px; text-align: left; padding: 8.7px 0px; background-color: #ffffff;}
+#contents .one:hover {cursor: pointer; text-decoration: underline; font-weight: bold;}
+#contents .two {float: left; width: 400px; text-align: left; padding: 8.7px 0px; background-color: #eeeeee;}
+#contents .two:hover {cursor: pointer; text-decoration: underline; font-weight: bold;}
+#contents .GOB-body span {float: right; width: 100px; color: #000;}
+#contents .ml {width: 400px; float: left; text-align: center; background-color: #dddddd;}
+#contents .mls {width: 100px; float: right; text-align: center;}
+
+
+#contents .cont2 {background-color: #ffffff;}
+#contents .cont2-h {width: 400px; height: 25px; background-color: mediumseagreen; color: #000; font-weight: bold;}
+#contents .GAB-body {top: 30px;}
+#contents .GAB-body img {float: left; width: 100px; height: 100px; margin: 40px 16.5px;}
+#contents .GAB-body img:hover {opacity: 50%; cursor: pointer;}
+
+
+#contents .cont3 {position: relative; background-color: #ffffff; z-index: -11;}
+#contents .cont3-h {width: 400px; height: 25px; background-color: mediumseagreen; color: #000; font-weight: bold;}
+#contents .cont3 img {position: absolute; left: 0; width: 100%; height: 200px; z-index: -10;}
+#contents .cont3 h3 {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    color: #fff; background-color: rgba(0,0,0,0.3);
+    padding: 10px; border-radius: 5px;
+}
+
+#footer {width: 1365px; height: 100px; margin: 0 auto;}
+#footer .foot1 {float: left; width: 20%; height: 100px;}
+#footer .foot1 img {width: 100%; height: 100%;}
+
+#footer .foot2 {
+    float: left; width: 60%; height: 100px;
+    background-color: rgb(217, 243, 217); color: #000;
+    text-align: center;
+}
+
+#footer .foot3 {position: relative; float: left; width: 20%; height: 100px; background-color: rgb(186, 240, 186);}
+#footer .foot3 h3 {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    color: #000; background-color: rgba(255,255,255,0.5);
+    padding: 5px; border-radius: 5px;
+}
+
+    
+
+
+#popup-bg {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); display: none;}
+.popup {position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 500px; height: 600px; background-color: rgba(255,255,255,0.8);}
+
+.tl {width: 500px; height: 100px; line-height: 100px;
+    text-align: center; background-color: rgba(255,255,255,0.5);}
+
+.tl h1 {color: #000;}
+
+.close:hover {text-decoration: underline;}
+
+.close-bg {
+    position: absolute; bottom: 25px; right: 25px;
+    width: 100px; height: 50px; line-height: 50px;
+    text-align: center; background-color: rgba(200,20,20,0.5); border-radius: 5px;
+}
+.close-bg a {color: #000;}
+#pb:hover {cursor: pointer; text-decoration: underline; font-weight: bold;}
