@@ -11,16 +11,46 @@ header h3 {position: absolute; left: 5px; top: 50px;}
 
 #content {display: block;}
 
-#left_section {float: left; width: 25%; height: 600px; background-color: lightblue;}
-#left_section .left_menu {list-style: none;}
+#left_section {
+    position: relative; float: left;
+    width: 25%; height: 600px;
+    background-color: #fff;
+}
+#left_section .left_menu {
+    position: absolute; list-style: none; margin-left: -22px;
+    width: 88%;
+}
 
-#center_section {float: left; width: 50%; height: 600px; background-color: khaki;}
+#left_section .left_menu li {
+    height: 40px; line-height: 40px;
+    background-color: ivory; font-size: 18px;
+    border: 1px solid gray; margin-top: 1px;
+}
+
+#left_section .left_menu li:hover {
+    background-color: lime; color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#center_section {
+    float: left; width: 50%; height: 600px;
+    background-color: #fff; font-size: 18px;
+}
+#center_section h1 {font-size: 36px;}
 
 
-#first_section {height: 400px;}
+#first_section {height: 300px;}
 
 #second_section {height: 200px;}
 
-#right_section {float: left; width: 25%; height: 600px; background-color: lightcoral;}
+#right_section {
+    float: left; width: 25%; height: 600px;
+    background-color: lightblue; color: #fff;
+    font-size: 18px;
+}
 
+#right_section h1 {font-size: 24px;}
+
+footer {width: 100%; text-align: center;}
 
