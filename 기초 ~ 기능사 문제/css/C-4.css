@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; background-color: #fff; color: #222328;}
+li {list-style: none;}
+a {text-decoration: none;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#all {width: 1000px;}
+
+#left-side {width: 250px; height: 650px; float: left;}
+#left-side .logo {width: 250px; height: 100px; background-color: rgb(37, 240, 37);}
+#left-side .nav {position: relative; width: 250px; height: 550px; background-color: rgb(5, 190, 5);}
+#left-side .menu {
+    position: relative; left: 15px; top: 15px;
+    width: 220px; height: 200px;
+}
+#left-side .menu li {
+    width: 220px; height: 50px; line-height: 50px;
+    background-color: rgb(124, 255, 124); text-align: center;
+}
+#left-side .menu li a {color: #222328;}
+#left-side .sub {display: none;}
+
+#right-side {width: 750px; height: 650px; float: right;}
+
+#banner {width: 750px; height: 350px;}
+
+#contents {width: 750px; height: 200px;}
+#contents > div {float: left;}
+#contents .cont1 {width: 300px; height: 200px; background-color: rgb(162, 252, 162);}
+#contents .cont2 {width: 250px; height: 200px; background-color: rgb(132, 221, 132);}
+#contents .cont3 {width: 200px; height: 200px; background-color: rgb(109, 202, 109);}
+
+#footer {width: 750px; height: 100px;}
+#footer > div {float: left;}
+#footer .foot1 {width: 200px; height: 100px; background-color: rgb(89, 187, 89);}
+#footer .foot2 {width: 400px; height: 100px; background-color: rgb(71, 184, 71);}
+#footer .foot3 {width: 150px; height: 100px; background-color: rgb(89, 187, 89);}
