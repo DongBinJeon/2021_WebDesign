@@ -4,6 +4,7 @@
 li {list-style: none;}
 a {text-decoration: none;}
 .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+.hide {display: none;}
 
 #all {width: 1000px;}
 
@@ -18,12 +19,15 @@ a {text-decoration: none;}
     width: 220px; height: 50px; line-height: 50px;
     background-color: rgb(124, 255, 124); text-align: center;
 }
-#left-side .menu li a {color: #222328;}
-#left-side .sub {display: none;}
+#left-side .menu li a {background-color: rgb(124, 255, 124); color: #222328; display: block;}
+#left-side .sub {display: none; position: relative; left: 220px; top: -50px; width: 220px; height: 250px; background-color: rgb(124, 255, 124); z-index: 20;}
 
 #right-side {width: 750px; height: 650px; float: right;}
 
-#banner {width: 750px; height: 350px;}
+#banner {position: relative; width: 750px; height: 350px;}
+#banner .slide {width: 750px; height: 350px;}
+#banner .slide img {position: absolute; width: 750px; height: 350px;}
+
 
 #contents {width: 750px; height: 200px;}
 #contents > div {float: left;}
