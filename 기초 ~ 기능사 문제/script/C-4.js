@@ -13,4 +13,12 @@ $(document).ready(function(){
         $(".slide > div:nth-child(2)").fadeIn();
         $(".slide").append($(".slide > div:nth-child(1)"));
     },2000);
+
+
+    $(".popup-li").on("click", function(){
+        $("#popup").css("display", "block");
+    });
+    $(".close-btn").on("click", function(){
+        $("#popup").css("display", "none");
+    });
 });
