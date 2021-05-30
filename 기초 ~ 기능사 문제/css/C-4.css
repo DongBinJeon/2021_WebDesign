@@ -20,6 +20,7 @@ a {text-decoration: none;}
     background-color: rgb(124, 255, 124); text-align: center;
 }
 #left-side .menu li a {background-color: rgb(124, 255, 124); color: #222328; display: block;}
+#left-side .menu li a:hover {text-decoration: underline; background-color: rgb(168, 255, 168);}
 #left-side .sub {display: none; position: relative; left: 220px; top: -50px; width: 220px; height: 250px; background-color: rgb(124, 255, 124); z-index: 20;}
 
 #right-side {width: 750px; height: 650px; float: right;}
@@ -45,6 +46,7 @@ a {text-decoration: none;}
 #contents .Gal-h {width: 250px; height: 20px; text-align: center; background-color: rgb(79, 245, 79);}
 
 #contents .cont3 {width: 200px; height: 200px; background-color: rgb(109, 202, 109);}
+#contents .Ba-h {width: 200px; height: 20px; text-align: center; background-color: rgb(79, 245, 79);}
 
 #footer {width: 750px; height: 100px;}
 #footer > div {float: left;}
