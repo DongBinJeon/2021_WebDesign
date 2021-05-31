@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body {background-color: #fff; color: #333333;}
+a {text-decoration: none;}
+li {list-style: none;}
+
+#all {width: 1200px; margin: 0px auto;}
+
+#header-bg {position: absolute; width: 100%; height: 100px; background-color: #0076BE; z-index: -10;}
+#header-contents {width: 1200px; height: 100px; background-color: #555;}
+#header-contents .logo {float: left; width: 200px; height: 100px; background-color: #0076BE;}
+#header-contents .logo img {width: 200px; height: 100px;}
+
+#header-contents .nav {position: relative; float: right; width: 1000px; height: 100px; background-color: #0076BE;}
+#header-contents .menu {
+    position: relative; left: 300px; top: 20px;
+    width: 600px; height: 60px;
+    background-color: #000; color: #333333;
+}
+#header-contents .menu li {
+    float: left; width: 150px; height: 60px; line-height: 60px; text-align: center;
+    background-color: #E66B27;
+}
+#header-contents .menu li:hover {text-decoration: underline; cursor: pointer; background-color: #ff5c04;}
+#header-contents .menu li a {color: #000;}
+#header-contents .sub {display: none;}
+
+
+#banner {width: 1200px; height: 300px; background-color: #0076BE;}
+
+
+#contents {width: 1200px; height: 200px;}
+#contents > div {height: 200px; float: left;}
+#contents .cont1 {width: 500px;}
+#contents .tab-header {width: 500px; height: 25px;}
+#contents .gong-header {float: left; text-align: center; width: 250px; height: 25px; line-height: 25px; background-color: #0076BE;}
+#contents .gong-header a {color: #000;}
+
+#contents .gal-header {float: left; text-align: center; width: 250px; height: 25px; line-height: 25px; background-color: #0076BE;}
+#contents .gal-header a {color: #000;}
+
+#contents .cont2 {width: 500px; background-color: #0076BE;}
+#contents .cont3 {width: 200px; background-color: #0076BE;}

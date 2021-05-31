@@ -1,65 +1,71 @@
 @charset "utf-8";
 
-* {margin: 0; padding: 0; background-color: #fff; color: #222328;}
+* {margin: 0; padding: 0;}
+body {background-color: #fff; color: #333;}
+a {text-decoration: none; color: #333;}
 li {list-style: none;}
-a {text-decoration: none;}
-.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
-.hide {display: none;}
 
 #all {width: 1000px;}
 
-#left-side {width: 250px; height: 650px; float: left;}
-#left-side .logo {width: 250px; height: 100px; background-color: rgb(37, 240, 37);}
-#left-side .nav {position: relative; width: 250px; height: 550px; background-color: rgb(5, 190, 5);}
-#left-side .menu {
-    position: relative; left: 15px; top: 15px;
-    width: 220px; height: 200px;
+#left-side {float: left; width: 200px; height: 650px;}
+#left-side .logo {width: 200px; height: 100px;}
+#left-side .logo img {width: 200px; height: 100px;}
+
+#left-side .nav {position: relative; width: 200px; height: 550px; background-color: rgb(173, 46, 0);}
+#left-side .menu {position: relative; left: 15px; top: 15px; width: 170px; height: 200px;}
+#left-side .menu li {text-align: center; width: 170px; height: 50px; line-height: 50px; background-color: orangered;}
+#left-side .menu li:hover {text-decoration: underline; cursor: pointer; background-color: rgb(255, 124, 77);}
+#left-side .sub {position: absolute; left: 170px; top: 0px; width: 170px; height: 300px; display: none; background-color: orangered; z-index: 20;}
+
+
+#right-side {float: right; width: 800px; height: 650px;}
+
+#banner {position: relative; width: 800px; height: 350px; overflow: hidden;}
+#banner .banner-font {
+    position: absolute; left: 50%; top: 50%; z-index: 15;
+    width: 150px; height: 75px; line-height: 75px;
+    background-color: rgba(255,255,255,0.8); text-align: center;
+    transform: translate(-50%, -50%); border-radius: 5px;
 }
-#left-side .menu li {
-    width: 220px; height: 50px; line-height: 50px;
-    background-color: rgb(124, 255, 124); text-align: center;
-}
-#left-side .menu li a {background-color: rgb(124, 255, 124); color: #222328; display: block;}
-#left-side .menu li a:hover {text-decoration: underline; background-color: rgb(168, 255, 168);}
-#left-side .sub {display: none; position: relative; left: 220px; top: -50px; width: 220px; height: 250px; background-color: rgb(124, 255, 124); z-index: 20;}
 
-#right-side {width: 750px; height: 650px; float: right;}
+#banner .slider {position: absolute; width: 3000px; height: 350px;}
+#banner .slider img {float: left; width: 800px; height: 350px;}
 
-#banner {position: relative; width: 750px; height: 350px;}
-#banner .slide {width: 750px; height: 350px;}
-#banner .slide img {position: absolute; width: 750px; height: 350px;}
-
-
-#contents {width: 750px; height: 200px;}
+#contents {width: 800px; height: 200px;}
 #contents > div {float: left;}
-#contents .cont1 {width: 300px; height: 200px; background-color: rgb(162, 252, 162);}
-#contents .Gong-h {width: 300px; height: 20px; text-align: center; background-color: rgb(79, 245, 79);}
-#contents .Gong-b .li-h {float: left; width: 300px; height: 30px; line-height: 30px; text-align: center; background-color: rgb(163, 240, 163);}
-#contents .Gong-b .li-h a {background-color: rgb(163, 240, 163);}
-#contents .Gong-b .li-h span {float: right; width: 100px; text-align: center; background-color: rgb(163, 240, 163);}
-#contents .Gong-b li {float: left; background-color: rgb(163, 240, 163); width: 300px; height: 30px; line-height: 30px; text-align: center;}
-#contents .Gong-b li a {background-color: rgb(163, 240, 163);}
-#contents .Gong-b span {float: right; text-align: center; width: 100px; background-color: rgb(163, 240, 163);}
-#contents .Gong-b li:hover {text-decoration: underline; font-weight: bold;}
+#contents .cont1 {width: 370px; height: 200px; background-color: rgb(0, 0, 165);}
+#contents .gong-header {width: 370px; height: 25px; line-height: 25px; text-align: center; background-color: blue;}
+#contents .gong-body {width: 370px; height: 175px; background-color: rgb(103, 103, 253); color: #fff;}
+#contents .body-top {float: left; text-align: center; width: 370px; height: 30px; line-height: 30px; border-bottom: 1px solid;}
+#contents .body-top span {float: right; text-align: center; width: 100px; height: 30px; line-height: 20px !important;}
+#contents .gong-body li {float: left; width: 370px; height: 25px; line-height: 25px;}
+#contents .gong-body span {float: right; width: 100px; height: 24px; line-height: 25px; text-align: center; border-left: 1px solid #fff;}
 
-#contents .cont2 {width: 250px; height: 200px; background-color: rgb(132, 221, 132);}
-#contents .Gal-h {width: 250px; height: 20px; text-align: center; background-color: rgb(79, 245, 79);}
+#contents .cont2 {position: relative; width: 330px; height: 200px; background-color: rgb(16, 16, 224);}
+#contents .gal-header {width: 330px; height: 25px; line-height: 25px; text-align: center; background-color: blue;}
+#contents .gal-body {position: relative; top: 33.5px; left: 10px; width: 330px; height: 175px;}
+#contents .gal-body img {width: 100px; height: 100px;}
+#contents .gal-body img:hover {opacity: 50%; cursor: pointer;}
 
-#contents .cont3 {width: 200px; height: 200px; background-color: rgb(109, 202, 109);}
-#contents .Ba-h {width: 200px; height: 20px; text-align: center; background-color: rgb(79, 245, 79);}
+#contents .cont3 {position: relative; width: 100px; height: 200px; background-color: rgb(69, 69, 240);}
+#contents .Ba-header {width: 100px; height: 25px; line-height: 25px; text-align: center; background-color: blue;}
+#contents .cont3 h4 {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 80px; height: 50px; line-height: 50px; text-align: center;
+    background-color: rgba(255,255,255,0.3); border-radius: 5px;
+}
 
-#footer {width: 750px; height: 100px;}
+#footer {width: 800px; height: 100px;}
 #footer > div {float: left;}
-#footer .foot1 {width: 200px; height: 100px; background-color: rgb(89, 187, 89);}
-#footer .foot2 {width: 400px; height: 100px; line-height: 100px; text-align: center; background-color: rgb(71, 184, 71);}
-#footer .foot2 address {background-color: rgb(71, 184, 71);}
+#footer .foot1 {width: 200px; height: 100px; background-color: rgb(173, 248, 97);}
+#footer .foot1 img {width: 200px; height: 100px;}
 
-#footer .foot3 {width: 150px; height: 100px; background-color: rgb(89, 187, 89);}
+#footer .foot2 {text-align: center; width: 500px; height: 100px; line-height: 100px; background-color: rgb(143, 241, 44);}
+
+#footer .foot3 {text-align: center; width: 100px; height: 100px; line-height: 100px; background-color: rgb(129, 255, 4);}
 
 
-#popup {display: none; position: fixed; width: 100%; height: 100%; background-color: rgba(0,66,0,0.5);}
-#popup .popup-b {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 500px; height: 600px; background-color: rgba(0,132,0,0.9);}
-#popup .popup-b h1 {background-color: rgba(0,132,0,0.9);}
-#popup .popup-b a {background-color: rgba(0,132,0,0.9);}
-#popup .close-btn {position: absolute; bottom: 20px; right: 20px;}
-#popup .close-btn:hover {text-decoration: underline; font-weight: bold;}
+#popup {display: none; position: fixed; width: 100%; height: 100%; background-color: rgba(255,255,255,0.4); z-index: 199;}
+#popup .popup-body {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 300px; height: 500px; z-index: 200; background-color: wheat;}
+#popup .popup-body address {font-size: 36px; font-weight: bold;}
+#popup .close {position: absolute; bottom: 25px; right: 25px;}
