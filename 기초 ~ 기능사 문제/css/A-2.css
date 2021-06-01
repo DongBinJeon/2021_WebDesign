@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body {background-color: #fff; color: #333;}
+a {text-decoration: none;}
+li {list-style: none;}
+
+#all {width: 1200px; margin: 0 auto;}
+
+#header {width: 1200px; height: 100px;}
+#header .logo {float: left; width: 200px; height: 100px;}
+#header .logo img {width: 200px; height: 100px;}
+
+#header .nav {position: relative; float: right; width: 1000px; height: 100px; background-color: #1d8844;}
+#header .menu {position: absolute; right: 25px; bottom: 0; width: 600px; height: 50px; line-height: 50px; text-align: center;}
+#header .menu li {float: left; width: 150px; height: 50px; line-height: 50px; background-color: #3cb149;}
+#header .menu li:hover {background-color: #434748; cursor: pointer; text-decoration: underline;}
+#header .menu li a {color: #333;}
+#header .sub {display: none;}
+
+
+#banner {width: 1200px; height: 300px;}
+
+
+#contents {width: 1200px; height: 200px;}
+#contents > div {float: left; width: 400px; height: 200px;}
+#contents > .cont1 {background-color: #3cb149;}
+#contents > .cont2 {background-color: #1d8844;}
+#contents > .cont3 {background-color: #434748;}
+
+#footer {width: 1200px; height: 100px;}
+#footer > div {float: left;}
+#footer .foot1 {width: 200px; height: 100px;}
+#footer .foot2 {width: 700px; height: 100px;}
+#footer .foot3 {width: 300px; height: 100px;}
