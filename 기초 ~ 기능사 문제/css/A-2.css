@@ -11,21 +11,38 @@ li {list-style: none;}
 #header .logo {float: left; width: 200px; height: 100px;}
 #header .logo img {width: 200px; height: 100px;}
 
-#header .nav {position: relative; float: right; width: 1000px; height: 100px; background-color: #1d8844;}
+#header .nav {position: relative; float: right; width: 1000px; height: 100px; background-color: #fff;}
 #header .menu {position: absolute; right: 25px; bottom: 0; width: 600px; height: 50px; line-height: 50px; text-align: center;}
 #header .menu li {float: left; width: 150px; height: 50px; line-height: 50px; background-color: #3cb149;}
-#header .menu li:hover {background-color: #434748; cursor: pointer; text-decoration: underline;}
+#header .menu li:hover {background-color: #1d8844; cursor: pointer; text-decoration: underline;}
 #header .menu li a {color: #333;}
 #header .sub {display: none;}
+#header .sub li:hover {background-color: #434748;}
 
 
-#banner {width: 1200px; height: 300px;}
+#banner {position: relative; width: 1200px; height: 300px; overflow: hidden; z-index: -10;}
+#banner .slider {position: absolute; width: 4000px; height: 300px;}
+#banner .slider img {float: left; width: 1200px; height: 300px;}
 
 
 #contents {width: 1200px; height: 200px;}
 #contents > div {float: left; width: 400px; height: 200px;}
-#contents > .cont1 {background-color: #3cb149;}
-#contents > .cont2 {background-color: #1d8844;}
+#contents > .cont1 {background-color: #fff; position: relative;}
+#contents .gong-header {width: 100px; height: 24px; line-height: 24px; border: 1px solid #000; text-align: center; border-radius: 5px; background-color: #fff;}
+#contents .gong-header a {color: #000;}
+#contents .gong-body {position: absolute; top: 25px; width: 398px; height: 173px; border: 1px solid #000;}
+#contents .title {float: left; width: 398px; height: 24px; line-height: 24px; text-align: center !important; border-bottom: 1px solid #000;}
+#contents .title span {float: right; width: 100px; height: 25px; line-height: 25px; text-align: center;}
+#contents .gong-body li {float: left; width: 398px; height: 29px; line-height: 29px;}
+#contents .gong-body li:hover {cursor: pointer;}
+#contents .gong-body li span {float: right; width: 100px; height: 29px; line-height: 29px; text-align: center; border-left: 1px solid #000;}
+#contents .gong-body li a {color: #000;}
+
+
+
+#contents > .cont2 {background-color: #fff;}
+#contents .gal-header {width: 100px; height: 24px; line-height: 24px; border: 1px solid #000; text-align: center; border-radius: 5px; background-color: #fff;}
+#contents .gal-header a {color: #000;}
 #contents > .cont3 {background-color: #434748;}
 
 #footer {width: 1200px; height: 100px;}
