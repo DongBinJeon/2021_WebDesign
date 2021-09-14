@@ -1,0 +1,11 @@
+문제 주조색은 메뉴 li의 색, 보조색은 hover 시 반전되는 색을 말함.
+
+배경색 (background-color) 는 #fff 고정.
+
+이미지에도 하이퍼링크 (a 태그) 쓰기.
+
+contents 부분에 border-radius css 추가하면 좋을 것 같음.
+
+갤러리 이미지 근처에 border 라인 + radius 추가하여 꾸며보기.
+
+footer logo 이미지 회색 보정 -> 필터 - grayscale

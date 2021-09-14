@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body {background-color: #fff; color: #333333;}
+li {list-style: none;}
+a {text-decoration: none;}
+
+
+#all {width: 1200px; margin: 0 auto;}
+
+#header {width: 1200px; height: 100px;}
+#header .logo {float: left; position: relative; width: 200px; height: 100px;}
+#header .logo img {position: absolute; top: 30px;}
+
+#header .nav {float: right; position: relative; width: 1000px; height: 100px;}
+#header .menu-bg {display: none; position: absolute; left: -200px; top: 100px; width: 1200px; height: 150px; background-color: #3cb149; z-index: 20;}
+#header .menu {position: relative; left: 375px; top: 50px; width: 600px; height: 50px; z-index: 20;}
+#header .menu li {float: left; width: 150px; height: 50px; line-height: 50px; text-align: center; background-color: #3cb149;}
+#header .menu li:hover {background-color: #1d8844; cursor: pointer;}
+#header .menu li a {color: #333333;}
+#header .sub {display: none;}
+#header .sub li:hover {background-color: #434748;}
+
+#banner {position: relative; width: 1200px; height: 300px; overflow: hidden;}
+#banner .slider {position: absolute; width: 4000px; height: 300px;}
+#banner .slider > div {float: left;}
+
+#contents {position: relative; width: 1200px; height: 200px;}
+#contents > div {float: left;}
+#contents .cont1 {position: relative; width: 400px; height: 200px;}
+#contents .gong-header {
+    position: absolute; left: 25px; top: 15px; z-index: 15;
+    width: 73px; height: 18px; line-height: 18px; text-align: center;
+    border: 1px solid; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-color: #fff;
+}
+#contents .gong-header a {color: #333; font-size: 14px;}
+
+#contents .gong-body {position: absolute; top: 34px; left: 15px; width: 370px; height: 160px; border: 1px solid; border-collapse: collapse;}
+#contents .gong-body th {position: relative; width: 369px; height: 24px; line-height: 24px; text-align: center; font-size: 14px; border-bottom: 1px solid;}
+#contents .gong-body th span {float: right; width: 100px; height: 25px; line-height: 25px; text-align: center;}
+#contents .gong-body th a {color: #333;}
+#contents .gong-body tr {width: 370px; height: 20px; line-height: 20px; font-size: 12px;}
+#contents .gong-body tr td span {float: right; width: 100px; height: 22px; line-height: 22px; text-align: center; border-left: 1px solid;}
+#contents .gong-body tr td a {color: #333;}
+#contents .gong-body td:hover {font-weight: bold; cursor: pointer;}
+#contents .td-css {background-color: gray;}
+
+#contents .cont2 {position: relative; width: 400px; height: 200px;}
+#contents .gal-header {
+    position: absolute; left: 25px; top: 15px; z-index: 15;
+    width: 73px; height: 18px; line-height: 18px; text-align: center;
+    border: 1px solid; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-color: #fff;
+}
+#contents .gal-header a {color: #333; font-size: 14px;}
+#contents .gal-body {position: absolute; top: 34px; left: 15px; width: 368px; height: 158px; border: 1px solid;}
+#contents .gal-body > div {position: relative; float: left; margin: 20px 5px; width: 110px; height: 110px; border: 1px solid; border-radius: 5px;}
+#contents .gal-body > div img {position: absolute; left: 5px; top: 5px;}
+#contents .gal-body > div img:hover {cursor: pointer; opacity: 70%;}
+
+#contents .cont3 {position: relative; width: 400px; height: 200px;}
+#contents .cont3 > div {position: relative; left: 20px; top: 15px; margin-top: 7px;}
+#contents .cont3 > div img:hover {cursor: pointer; opacity: 70%;}
+
+#footer {position: relative; width: 1200px; height: 100px;}
+#footer > div {float: left;}
+#footer .foot1 {position: relative; width: 200px; height: 100px;}
+#footer .foot1 img {position: absolute; top: 30px; filter: grayscale();}
+
+#footer .foot2 {position: relative; text-align: center; position: relative; width: 800px; height: 100px;}
+#footer .foot2 > div {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+#footer .foot2 > div a {color: #333;}
+
+#footer .foot3 {width: 200px; height: 100px; line-height: 100px; text-align: center;}
+#footer .foot3 a {color: #333;}
+
+#pop-bg {display: none; position: fixed; width: 100%; height: 100%; background-color: rgba(255,255,255,0.5); z-index: 100;}
+#pop-c {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: #fff; width: 300px; height: 500px;}
+#pop-c h1 {position: absolute; left: 25px; top: 15px;}
+#pop-c .close {padding: 10px 15px; position: absolute; bottom: 25px; right: 25px; color: #333; background-color: #3cb149; border-radius: 5px;}
+#pop-c .close:hover {background-color: #1d8844;}

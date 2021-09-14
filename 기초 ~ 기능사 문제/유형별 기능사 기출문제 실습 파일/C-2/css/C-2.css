@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; color: #222328;}
+body {background-color: #fff;}
+a {text-decoration: none;}
+li {list-style: none;}
+.hide {display: none;}
+
+
+#all {width: 1000px;}
+#left-contents {float: left; width: 200px; height: 650px;}
+#left-contents .logo {position: relative; width: 200px; height: 100px;}
+#left-contents .logo img {position: absolute; top: 30px;}
+
+#left-contents .nav {position: relative; width: 200px; height: 550px;}
+#left-contents .menu {position: absolute; width: 180px; height: 200px; left: 10px; top: 10px;}
+#left-contents .menu li {text-align: center; width: 180px; min-height: 50px; line-height: 50px; background-color: plum;}
+#left-contents .menu li:hover {cursor: pointer; background-color: rgb(255, 0, 255);}
+#left-contents .sub {display: none;}
+
+
+#right-contents {float: right; width: 800px; height: 650px;}
+
+#banner {position: relative; width: 800px; height: 350px;}
+#banner > h1 {
+    z-index: 15; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    padding: 25px 35px; background-color: rgba(255,255,255,0.7); border-radius: 10px; color: #333;
+    font-size: 24px;
+}
+#banner .slider {position: absolute; width: 800px; height: 350px;}
+#banner img {position: absolute;}
+
+
+#contents {width: 800px; height: 200px;}
+#contents > div {float: left;}
+#contents .cont1 {position: relative; width: 350px; height: 200px;}
+#contents .gong-header {
+    z-index: 15; position: absolute; left: 30px; top: 10px;
+    text-align: center; width: 75px; height: 25px; line-height: 25px;
+    border: 1px solid #b2b2b2; border-bottom-color: #fff;
+    border-top-right-radius: 10px; border-top-left-radius: 10px;
+    font-size: 12px;
+}
+#contents .gong-body-bg {position: absolute; top: 36px; left: 10px; width: 330px; height: 155px; border: 1px solid #b2b2b2;}
+#contents .gong-body {position: absolute; left: 15px; top: 15px; width: 300px; height: 125px; border: 1px solid #b2b2b2; border-collapse: collapse;}
+#contents .gong-body th {text-align: center; width: 300px; height: 25px; line-height: 25px; border: 1px solid #b2b2b2; font-size: 12px;}
+#contents .gong-body th span {float: right; width: 70px; height: 25px; line-height: 25px; border-left: 1px solid #b2b2b2;}
+#contents .gong-body tr td {width: 300px; height: 20px; line-height: 20px; font-size: 11px;}
+#contents .gong-body tr td:hover {font-weight: bold; cursor: pointer;}
+#contents .gong-body tr td span {text-align: center; float: right; width: 70px; height: 20px; line-height: 20px; border-left: 1px solid #b2b2b2;}
+
+
+#contents .cont2 {position: relative; width: 350px; height: 200px;}
+#contents .gal-header {
+    z-index: 15; position: absolute; left: 30px; top: 10px;
+    text-align: center; width: 75px; height: 25px; line-height: 25px;
+    border: 1px solid #b2b2b2; border-bottom-color: #fff;
+    border-top-right-radius: 10px; border-top-left-radius: 10px;
+    font-size: 12px;
+}
+#contents .gal-body {position: absolute; top: 36px; left: 10px; width: 330px; height: 155px; border: 1px solid #b2b2b2;}
+#contents .gal-body div {position: relative; top: 30px; float: left; width: 95px; height: 95px; margin-left: 10px; border: 1px solid #b2b2b2; border-radius: 5px;}
+#contents .gal-body div img {position: absolute; top: 7px; left: 7px;}
+#contents .gal-body div img:hover {cursor: pointer; opacity: 70%;}
+
+
+#contents .cont3 {width: 100px; height: 200px;}
+#contents .cont3 img {margin-top: 10px;}
+#contents .cont3 img:hover {cursor: pointer; opacity: 70%;}
+
+
+#footer {width: 800px; height: 100px;}
+#footer .foot1 {float: left; text-align: center; width: 600px; height: 100px;}
+#footer .foot-right {float: right;}
+#footer .foot2 {width: 200px; height: 50px;}
+#footer .foot2 img {float: left; margin-left: 10px;}
+
+#footer .foot3 {text-align: center; width: 200px; height: 50px; line-height: 50px;}
+
+
+#popup {position: fixed; width: 100%; height: 100%; background-color: rgba(255,255,255,0.5); z-index: 100;}
+#popup .popup-body {position: absolute; left: 25%; top: 50%; transform: translate(-25%, -50%); width: 300px; height: 500px; background-color: #fff;}
+#popup .popup-body h1 {position: absolute; left: 25px; top: 25px;}
+#popup .close {position: absolute; bottom: 25px; right: 25px; padding: 10px 15px; background-color: #000; border-radius: 5px; color: #fff;}
+#popup .close:hover {font-weight: bold; cursor: pointer; text-decoration: underline;}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body {background-color: #fff;}
+li {list-style: none;}
+a {text-decoration: none;}
+
+#all {width: 1000px; margin: 0;}
+
+#left-c {float: left; width: 200px; height: 650px;}
+#left-c .logo {position: relative; width: 200px; height: 100px;}

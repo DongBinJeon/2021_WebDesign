@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body {background-color: #fff; color: #888;}
+a {text-decoration: none;}
+li {list-style: none;}
+
+#header-bg {position: absolute; width: 100%; height: 100px; background-color: #fff; z-index: -10;}
+#footer-bg {position: absolute; top: 600px; width: 100%; height: 100px; background-color: #fff; z-index: -10;}
+
+#all {width: 1200px; margin: 0 auto;}
+
+#header {width: 1200px; height: 100px; background-color: #CAAC7D;}
+#header .logo {float: left; width: 200px; height: 100px;}
+#header .logo img {width: 200px; height: 100px;}
+
+#header .nav {position: relative; float: right; width: 1000px; height: 100px;}
+#header .menu {position: absolute; width: 600px; height: 50px; top: 25px; right: 25px;}
+#header .menu li {float: left; width: 150px; height: 50px; line-height: 50px; text-align: center; background-color: #e4be81;}
+#header .menu li:hover {background-color: #f1bf6f; cursor: pointer; text-decoration: underline;}
+#header .menu li a {color: #888;}
+#header .sub {display: none;}
+
+
+#banner {position: relative; width: 1200px; height: 300px; overflow: hidden; z-index: -10;}
+#banner .slider {position: absolute; width: 1200px; height: 300px;}
+#banner .slider img {width: 1200px; height: 300px; display: block;}
+
+
+#contents {width: 1200px; height: 200px;}
+#contents > div {float: left; height: 200px;}
+#contents .cont1 {width: 399px; position: relative; border-right: 1px solid;}
+#contents .gong-header {width: 399px; height: 25px; line-height: 25px; text-align: center; background-color: #4A4948;}
+#contents .gong-body {width: 399px; height: 175px; background-color: #CAAC7D;}
+#contents .gong-body > .body-title {float: left; width: 399px; height: 24px; line-height: 24px; text-align: center; border-bottom: 1px solid;}
+#contents .gong-body > .body-title span {float: right; width: 100px; height: 24px; line-height: 24px; text-align: center;}
+#contents .gong-body li {float: left; width: 399px; height: 25px; line-height: 25px;}
+#contents .gong-body li:hover {text-decoration: underline; font-weight: bold;}
+#contents .gong-body li span {float: right; width: 100px; height: 25px; line-height: 25px; text-align: center; border-left: 1px solid;}
+#contents .gong-body li a {color: #888;}
+
+
+#contents .cont2 {position: relative; width: 399px; border-right: 1px solid;}
+#contents .gal-header {width: 399px; height: 25px; line-height: 25px; text-align: center; background-color: #4A4948;}
+#contents .gal-body {width: 399px; height: 175px; background-color: #CAAC7D;}
+#contents .img-box {position: absolute; left: 50px; top: 60px;}
+#contents .img-box img {width: 100px; height: 100px;}
+#contents .img-box img:hover {cursor: pointer; opacity: 50%;}
+
+
+#contents .cont3 {width: 400px;}
+#contents .ba-header {width: 400px; height: 25px; line-height: 25px; text-align: center; background-color: #4A4948;}
+#contents .ba-body {width: 400px; height: 175px; background-color: #CAAC7D;}
+
+
+#footer {position: relative; width: 1200px; height: 100px;}
+#footer > div {float: left;}
+#footer .foot1 {width: 200px; height: 100px;}
+#footer .foot1 img {width: 200px; height: 100px; filter: grayscale();}
+
+#footer .foot2 {width: 699px; height: 100px; line-height: 100px; text-align: center; background-color: #4A4948; border-right: 1px solid;}
+
+#footer .foot3 {width: 300px; height: 100px; background-color: #4A4948;}
+
+
+#popup {display: none; position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 150;}
+#popup .popup-body {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 300px; height: 500px; background-color: #fff;}
+#popup .close {position: absolute; bottom: 25px; right: 25px; color: #888;}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+body {background-color: #fff;}
+li {list-style: none;}
+a {text-decoration: none;}
+
+.hide {display: none;}
+.active {background-color: #fff; font-weight: bold;}
+
+
+#all {width: 1000px; margin: 0;}
+#left-c {position: relative; width: 200px; height: 650px; float: left; background-color: fff;}
+#left-c .logo {position: relative; width: 200px; height: 100px;}
+#left-c .logo img {position: absolute; top: 30px;}
+
+#left-c .nav {position: relative; width: 200px; height: 550px;}
+#left-c .menu {position: absolute; left: 10px; top: 10px; width: 180px; height: 200px;}
+#left-c .menu li {width: 180px; min-height: 50px; line-height: 50px; text-align: center; background-color: rgb(119, 183, 255);}
+#left-c .menu li:hover {cursor: pointer; background-color: rgb(60, 60, 255);}
+#left-c .menu li a {color: #333;}
+#left-c .sub {display: none;}
+#left-c .sub li {background-color: cornflowerblue;}
+
+
+
+#right-c {position: relative; width: 800px; height: 650px; float: right; background-color: #fff;}
+#banner {position: relative; width: 800px; height: 350px;}
+#banner .slider {position: absolute; width: 800px; height: 350px;}
+#banner .slider img {position: absolute;}
+
+#contents {position: relative; width: 800px; height: 200px;}
+#contents > div {float: left;}
+#contents .cont1 {position: relative; width: 300px; height: 200px;}
+#contents .tab-header {position: absolute; left: 25px; top: 10px;}
+#contents .tab-header li {
+    float: left; text-align: center;
+    width: 75px; height: 24px; line-height: 24px;
+    border: 1px solid #a2a2a2; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom: none;
+    z-index: 15;
+}
+#contents .tab-header li:hover {cursor: pointer; font-weight: bold;}
+#contents .tab-header li a {color: #333; font-size: 12px;}
+#contents .gong-header {position: relative;}
+#contents .gal-header {position: relative; left: -1px;}
+
+#contents .gong-body {position: relative; left: 10px; top: 34px; width: 278px; height: 158px; border: 1px solid #a2a2a2; z-index: 10;}
+#contents .gong-contents {position: absolute; width: 278px; height: 158px; border-collapse: collapse;}
+#contents .gong-contents th {width: 278px; height: 25px; line-height: 25px; text-align: center; font-size: 12px;}
+#contents .gong-contents th a {color: #333;}
+#contents .gong-contents th span {float: right; width: 100px; height: 25px; line-height: 25px; text-align: center;}
+#contents .gong-contents td {width: 278px; height: 25px; line-height: 25px; text-align: center; font-size: 12px;}
+#contents .gong-contents td:hover {font-weight: bold; cursor: pointer;}
+#contents .gong-contents td span {float: right; width: 100px; height: 25px; line-height: 25px; text-align: center;}
+#contents .gong-contents td a {color: #333;}
+#contents .title {width: 278px; height: 25px; line-height: 25px; text-align: center; font-size: 12px; border-bottom: 1px solid;}
+#contents .title span {float: right; width: 100px; height: 25px; line-height: 25px; text-align: center;}
+#contents .title a {color: #333;}
+#contents .popup-btn {width: 278px; height: 25px; line-height: 25px; text-align: center; font-size: 12px;}
+#contents .popup-btn span {float: right; width: 100px; height: 25px; line-height: 25px; text-align: center;}
+#contents .td-css {background-color: rgb(119, 183, 255);}
+
+#contents .gal-body {position: relative; left: 10px; top: 34px; width: 278px; height: 158px; border: 1px solid #a2a2a2; z-index: 10;}
+#contents .gal-body > div {float: left; position: relative; width: 80px; height: 80px; border: 1px solid #a2a2a2; margin: 35px 5px; border-radius: 5px;}
+#contents .gal-body > div img {position: absolute; left: 5px; top: 5px;}
+#contents .gal-body > div img:hover {cursor: pointer; opacity: 70%;}
+
+
+#contents .cont2 {position: relative; width: 300px; height: 200px;}
+#contents .cont2 img {position: absolute; left: 10px; top: 15px;}
+
+
+#contents .cont3 {position: relative; width: 200px; height: 200px;}
+#contents .cont3 img {position: absolute; left: 10px; top: 15px;}
+
+
+#footer {width: 800px; height: 100px;}
+#footer .left-f {position: relative; float: left; width: 200px; height: 100px;}
+#footer .left-f img {position: absolute; top: 30px; filter: grayscale();}
+
+#footer .right-f {position: relative; float: right; width: 600px; height: 100px;}
+#footer .right-f .footer-menu-line {position: relative; width: 600px; height: 50px;}
+#footer .footer-menu {position: absolute; left: 80px; top: 12.5px;}
+#footer .footer-menu li {
+    float: left;
+    text-align: center; width: 120px; height: 25px; line-height: 25px;
+    background-color: rgb(119, 183, 255);
+    margin: 0px 15px; border-radius: 5px;
+}
+#footer .footer-menu li:hover {cursor: pointer; background-color: rgb(60, 60, 255);}
+#footer .footer-menu li a {color: #333;}
+
+#footer .right-f .cp {text-align: center; width: 600px; height: 50px; line-height: 50px;}
+#footer .right-f .cp a {color: #333;}
+
+
+#popup {position: fixed; width: 100%; height: 100%; background-color: rgba(255,255,255,0.4); z-index: 100;}
+#popup .popup-contents {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 300px; height: 500px; background-color: #fff;}
+#popup .popup-contents h1 {position: absolute; left: 25px; top: 25px; font-weight: bold;}
+#popup .popup-contents h1 a {color: #333;}
+#popup .close {position: absolute; bottom: 25px; right: 25px; background-color: rgb(119, 183, 255); padding: 10px 15px; border-radius: 5px; color: #333;}
+#popup .close:hover {cursor: pointer; background-color: rgb(60,60,255);}
