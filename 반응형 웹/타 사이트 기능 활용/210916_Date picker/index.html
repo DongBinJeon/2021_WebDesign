@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"> <!-- google-font css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"> <!-- Bootstrap 데이터 픽커 css -->
+    <script src="bootstrap-js/jquery-3.6.0.min.js"></script>  <!-- Jquery -->
+    <script src="make-js/main.js"></script> <!-- 내가 만든 js 파일 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/ckeditor.min.js"></script> <!-- ckeditor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/translations/ko.min.js"></script> <!-- ckedtior 우리말 번역 -->
+    <script src="bootstrap-js/bootstrap.min.js"></script> <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script> <!-- clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- Jquery cookie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script> <!-- Bootstrap 데이터 픽커 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js"></script> <!-- Bootstrap 데이터 픽커 한국어 -->
+</head>
+<body>
+    <div class="input-group input-daterange">
+        <input type="text" id="sdate" class="form-control">
+        <span class="input-group-text">부터</span>
+        <input type="text" id="edate" class="form-control">
+    </div>
+
+    <script>
+        $(".input-daterange").datepicker({
+            formet: "yyyy-mm-dd",
+            language: "ko",
+            todayBtn: "linked",
+            autoclose: "true"
+        });
+    </script>
+</body>
+</html>

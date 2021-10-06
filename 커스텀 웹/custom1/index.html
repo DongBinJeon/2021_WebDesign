@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"> <!-- google-font css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> <!-- Jquery Ui css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> <!-- bxslider css -->
+    <link rel="stylesheet" href="make-css/custom.css"> <!-- custom.html css -->
+    <script src="bootstrap-js/jquery-3.6.0.min.js"></script>  <!-- Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/ckeditor.min.js"></script> <!-- ckeditor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/translations/ko.min.js"></script> <!-- ckedtior 우리말 번역 -->
+    <script src="bootstrap-js/bootstrap.min.js"></script> <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script> <!-- clipboard.js -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- jquery Ui js -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> <!-- bxslider js -->
+</head>
+<body>
+    <div id="wrap">
+        <!-- header 파트 (상단 검색창, 그 아래 메뉴) -->
+        <header id="header">
+            <a href="#"><img src="img/custom1-img/logo.png" alt="logo"></a>
+            
+            <div id="input-space">
+                <input id="tags" type="text" placeholder="무엇을 찾으시나요?">
+            </div>
+            <button type="button"><i class="fas fa-search"></i></button>
+        </header>
+
+        <nav id="nav">
+            <ul class="menu">
+                <li id="liveToastBtn"><a data-bs-toggle="modal" data-bs-target="#exampleModal">메뉴 1</a></li>
+                <li id="liveToastBtn"><a data-bs-toggle="modal" data-bs-target="#exampleModal">메뉴 2</a></li>
+                <li id="liveToastBtn"><a data-bs-toggle="modal" data-bs-target="#exampleModal">메뉴 3</a></li>
+                <li id="liveToastBtn"><a data-bs-toggle="modal" data-bs-target="#exampleModal">메뉴 4</a></li>
+                <li id="liveToastBtn"><a data-bs-toggle="modal" data-bs-target="#exampleModal">메뉴 5</a></li>
+                <li id="liveToastBtn"><a data-bs-toggle="modal" data-bs-target="#exampleModal">메뉴 6</a></li>
+            </ul>
+
+
+            <!-- 메뉴 알림창 -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">선택하신 메뉴는 준비 중입니다.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            빠른 시일 내에 준비해 보도록 하겠습니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="contents">
+            <div class="slider">
+                <div><a href="#"><img src="img/custom1-img/slide-img(1).jpg" alt="slide_img1"></a></div>
+                <div><a href="#"><img src="img/custom1-img/slide-img(2).jpg" alt="slide_img2"></a></div>
+                <div><a href="#"><img src="img/custom1-img/slide-img(3).jpg" alt="slide_img3"></a></div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        $( function() {
+          var availableTags = [
+            "첫 번째 컨텐츠",
+            "두 번째 컨텐츠",
+            "세 번째 컨텐츠",
+            "네 번째 컨텐츠",
+            "다섯 번째 컨텐츠",
+            "첫 번째 영상",
+            "두 번째 영상",
+            "세 번째 영상",
+            "네 번째 영상",
+            "다섯 번째 영상"
+          ];
+          $( "#tags" ).autocomplete({
+            source: availableTags
+          });
+        } );
+
+        $(document).ready(function(){
+            $('.slider').bxSlider();
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"> <!-- google-font css -->
+    <script src="bootstrap-js/jquery-3.6.0.min.js"></script>  <!-- Jquery -->
+    <script src="make-js/main.js"></script> <!-- 내가 만든 js 파일 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/ckeditor.min.js"></script> <!-- ckeditor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/translations/ko.min.js"></script> <!-- ckedtior 우리말 번역 -->
+    <script src="bootstrap-js/bootstrap.min.js"></script> <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script> <!-- clipboard.js -->
+</head>
+<body>
+        <!-- Target -->
+    <input id="foo" class="w-50 float-start form-control" value="https://github.com/zenorocha/clipboard.js.git">
+
+        <!-- Trigger -->
+    <button class="btn btn-primary" data-clipboard-target="#foo">
+        <i class="fas fa-copy"></i>
+    </button>
+
+
+
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+
+        clipboard.on('success', function(e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+
+            e.clearSelection();
+            alert("복사되었습니다.")
+        });
+
+        clipboard.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+        });
+    </script>
+</body>
+</html>

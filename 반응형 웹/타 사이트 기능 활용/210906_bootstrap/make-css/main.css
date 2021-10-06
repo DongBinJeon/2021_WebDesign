@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+/* body {background-color: skyblue;} */
+li {list-style: none;}
+a {text-decoration: none; color: #636363;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#wrap {width: 100%; height: 100%; background-color: skyblue;}
+header {display: flex; position: sticky; top: 0; width: 100%; height: 250px; background-color: skyblue; justify-content: space-between; z-index: 100;}
+header .title {
+    font-family: 'Allison', cursive; font-size: 36px;
+    margin: 75px auto; width: 200px; height: 100px; line-height: 100px; background-color: lightblue; text-align: center;
+}
+header .site-link {margin-top: 25px; display: flex; flex-direction: column; min-width: 150px; width: 15%; height: 30px; line-height: 30px; text-align: center;}
+header .site-link > div {background-color: lightblue; border-radius: 10px; margin: 10px 25px;}
+header .site-link > div:hover {cursor: pointer; background-color: rgb(168, 232, 253);}
+
+#main-contents {width: 100%; height: 719px;}
+#main-contents .bootstrap-space {position: relative; width: 100%; height: 719px; background-color: slateblue;}
+#main-contents .bootstrap-space h1 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;}
+#main-contents .bootstrap-space h1 a {color: #000;}

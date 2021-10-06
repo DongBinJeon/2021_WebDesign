@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css"> <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"> <!-- google-font css -->
+    <script src="bootstrap-js/jquery-3.6.0.min.js"></script>  <!-- Jquery -->
+    <script src="make-js/main.js"></script> <!-- 내가 만든 js 파일 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/ckeditor.min.js"></script> <!-- ckeditor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/translations/ko.min.js"></script> <!-- ckedtior 우리말 번역 -->
+    <script src="bootstrap-js/bootstrap.min.js"></script> <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script> <!-- clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- Jquery cookie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script> <!-- Bootstrap 데이터 픽커 -->
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div id="id_check" class="mb-3 form-check">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input id="checkbox" type="checkbox" class="form-check-input">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>   
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            if($.cookie("user_id")){
+                $("#exampleInputEmail1").val($.cookie("user_id"));
+            }
+            
+            
+            
+            $("#id_check").on("click", function(){
+                if($("#checkbox").prop("checked") == true){
+                    $.cookie("user_id", $("#exampleInputEmail1").val())
+                }else{
+                    $.cookie("user_id", "");
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

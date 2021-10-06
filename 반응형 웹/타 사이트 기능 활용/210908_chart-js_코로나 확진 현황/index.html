@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap">
+    <script src="bootstrap-js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div style="width: 1000px; height: 600px;">
+        <canvas id="myChart"></canvas>
+    </div>
+
+
+
+
+    <script>
+        const labels = [
+            '어제의 확진 현황',
+            '오늘의 확진 현황'
+        ];
+        const data = {
+        labels: labels,
+        datasets: [{
+            label: '치료중인 확진자',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [1031,832],
+        },
+
+        {
+            label: '완치된 확진자',
+            backgroundColor: 'rgb(66, 133, 244)',
+            borderColor: 'rgb(66, 133, 244)',
+            data: [5467,7645],
+        },
+
+        {
+            label: '사망한 확진자',
+            backgroundColor: 'rgb(250, 187, 5)',
+            borderColor: 'rgb(250, 187, 5)',
+            data: [66,22],
+        },
+
+        {
+            label: '확진자 누계',
+            backgroundColor: 'rgb(52, 168, 83)',
+            borderColor: 'rgb(52, 168, 83)',
+            data: [6564, 7360],
+        }
+    
+    ]
+    };
+
+
+    const config = {
+        type: 'bar',
+        data,
+        options: {
+            indexAxis: 'y',
+  },
+};
+    var myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+    </script>
+    
+</body>
+</html>
