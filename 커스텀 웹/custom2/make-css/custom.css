@@ -5,12 +5,34 @@ li {list-style: none;}
 a {text-decoration: none;}
 
 @media (max-width: 720px){
-    #header .menu {flex-direction: column;}
-    #header .menu .li-one {display: flex; width: 545.3px; height: 75px; background-color: #000;}
+    #header .menu {width: 90% !important;}
 }
 
 #wrap {width: 80%; margin: 0 auto;}
-#header {width: 100%; height: 150px; border: 1px solid #E0E0E0;}
-#header .menu-space {position: relative; width: 95%; height: 130px; margin: 1%;}
-#header .menu {display: flex;}
-#header .menu li {text-align: center; width: 10%; min-width: 75px; height: 75px; line-height: 75px; margin: 25px 8%; background-color: gray;}
+.hide {display: none;}
+
+#header {width: 100%; height: 150px; border-bottom: 1px solid #E0E0E0;}
+#header .menu-space {position: relative; width: 98%; height: 130px; margin: 1%;}
+#header .menu {display: flex; width: 97%; justify-content: space-between;}
+#header .menu li {text-align: center; width: 15%; max-width: 100px; height: 50px; line-height: 50px; background-color: #E0E0E0; color: #fff; border-radius: 5px; margin: 37px 0px;}
+#header .menu li:hover {cursor: pointer; font-weight: bold;}
+#header .menu li:nth-child(1) {background-color: tomato}
+#header .menu li:nth-child(2) {background-color: orange;}
+#header .menu li:nth-child(3) {background-color: yellowgreen;}
+#header .menu li:nth-child(4) {background-color: skyblue;}
+
+#contents {position: relative; top: 20px; padding: 10px; width: 100%; height: 700px; background-color: #E0E0E0;}
+#contents #show_thumbnail {position: absolute; margin: -10px; width: 100%; height: 700px; z-index: 100;}
+#contents #show_thumbnail > div {position: absolute;}
+#contents #show_thumbnail div:nth-child(1) {width: 100%; height: 700px; background-color: tomato;}
+#contents #show_thumbnail div:nth-child(2) {width: 100%; height: 700px; background-color: orange;}
+#contents #show_thumbnail div:nth-child(3) {width: 100%; height: 700px; background-color: yellowgreen;}
+#contents #show_thumbnail div:nth-child(4) {width: 100%; height: 700px; background-color: skyblue;}
+#contents #show_contents {width: 99.8%; height: 680px; border: 1px solid #FFF;}
+#contents #show_contents #top_show {display: flex; width: 100%; height: 340px;}
+#contents #show_contents #top_show .contents_one {position: relative; width: 50%; height: 340px;}
+#contents #show_contents #top_show .contents_two {position: relative; width: 50%; height: 340px;}
+
+#contents #show_contents #bottom_show {display: flex; width: 100%; height: 340px;}
+#contents #show_contents #bottom_show .contents_three {position: relative; width: 50%; height: 340px;}
+#contents #show_contents #bottom_show .contents_four {position: relative; width: 50%; height: 340px;}

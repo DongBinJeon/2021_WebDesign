@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="make-css/custom.css">
+    <link rel="stylesheet" href="make-css/custom.css"> <!-- 해당 html 메인 css -->
     <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css"> <!-- bootstrap css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- font-awesome css -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"> <!-- google-font css -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> <!-- Jquery Ui css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> <!-- bxslider css -->
-    <script src="bootstrap-js/jquery-3.6.0.min.js"></script>  <!-- Jquery -->
+    <script src="make-js/jquery-3.6.0.min.js"></script>  <!-- Jquery -->
+    <script src="make-js/custom.js"></script> <!-- 해당 html 메인 js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/ckeditor.min.js"></script> <!-- ckeditor -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/29.2.0/translations/ko.min.js"></script> <!-- ckedtior 우리말 번역 -->
@@ -24,15 +25,35 @@
     <div id="wrap">
         <header id="header">
             <nav class="menu-space">
-                <!-- ul로 하면 안됨, div로 수정해줄 것 -->
                 <ul class="menu">
-                    <li class="li_one"><a>메뉴1</a></li>
-                    <li class="li_one"><a>메뉴2</a></li>
-                    <li class="li_two"><a>메뉴3</a></li>
-                    <li class="li_two"><a>메뉴4</a></li>
+                    <li class="first_contents_btn"><a>메뉴1</a></li>
+                    <li class="second_contents_btn"><a>메뉴2</a></li>
+                    <li class="third_contents_btn"><a>메뉴3</a></li>
+                    <li class="fourth_contents_btn"><a>메뉴4</a></li>
                 </ul>
             </nav>
         </header>
+
+        <section id="contents">
+            <div id="show_thumbnail">
+                <div class="first_c_thumbnail hide"></div>
+                <div class="second_c_thumbnail hide"></div>
+                <div class="third_c_thumbnail hide"></div>
+                <div class="fourth_c_thumbnail hide"></div>
+            </div>
+            <div id="show_contents">
+                <div id="top_show">
+                    <div class="contents_one">
+                        
+                    </div>
+                    <div class="contents_two"></div>
+                </div>
+                <div id="bottom_show">
+                    <div class="contents_three"></div>
+                    <div class="contents_four"></div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
