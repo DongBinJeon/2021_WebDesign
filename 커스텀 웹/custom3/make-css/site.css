@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #636363;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+
+#wrap {position: relative; width: 100%; height: 7200px;}
+
+/* 헤더 - 로고 영역 css */
+header {position: relative; width: 100%; height: 200px; background-color: skyblue;}
+header img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 10px;}
+
+/* 왼쪽 움직이는 메뉴 css */
+#move_space {position: sticky; left: 20px; top: 30%; width: 20%; height: 200px;}
+.movemenu_space {width: 20%; height: 200px;}
+.menu {position: relative; top: 0; min-width: 150px; width: 20%; height: 160px;}
+.menu li {
+    text-align: center; z-index: 100;
+    width: 150px; height: 40px; line-height: 40px;
+    background-color: rgba(255,255,255,0.4); border-radius: 50px; box-shadow: 5px 5px 5px gray;
+    margin-top: 15px;
+}
+.menu li:hover {cursor: pointer; background-color: lightblue;}
+.menu li a {font-family: 'Oswald', sans-serif;}
+
+
+#contents > section {display: block;}
+
+/* 세션 1 - 부트스트랩 영역 css */
+#Bootstrap {position: absolute; width: 100%; height: 1000px; background-color: #7952B3;}
+#Bootstrap .background-icon {
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    border: 1px solid #fff; border-radius: 15px;
+}
+#Bootstrap .background-icon i {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #fff;}
+
+
+/* 세션 2 - 폰트어썸 영역 css */
+#Font-Awesome {position: absolute; top: 1200px; width: 100%; height: 1000px; background-color: #339AF0;}
+#Font-Awesome .background-icon {
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    background-color: #001C40; border-radius: 15px;
+}
+#Font-Awesome .background-icon i {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #FFD43B;}
+
+/* 세션 3 - 구글폰트 영역 css */
+#Google-Font {position: absolute; top: 2200px; width: 100%; height: 1000px; background-color: #4285F4;}
+#Google-Font .background-icon {
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    background-color: #ffffff; border-radius: 15px;
+}
+#Google-Font .background-icon i {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #EA4335;}
+
+/* 세션 4 - CDN-JS 영역 css */
+#CDN-JS {position: absolute; top: 3200px; width: 100%; height: 1000px; background-color: #454647;}
+#CDN-JS .background-icon {
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    background-color: #EBEBEB; border-radius: 15px;
+}
+#CDN-JS .background-icon i {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #FF6934;}
+
+/* 세션 5 - 차트-JS 영역 css */
+#Chart-JS {position: absolute; top: 4200px; width: 100%; height: 1000px; background-color: #FE777B;}
+#Chart-JS .background-icon {
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    background-color: #4BC0C0; border-radius: 15px;
+}
+#Chart-JS .background-icon i {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #FFCE56;}
+
+/* 세션 6 - ckeditor 영역 css */
+#ckEdtior {position: absolute; top: 5200px; width: 100%; height: 1000px; background-color: #3E59AD;}
+#ckEdtior .background-icon {
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    background-color: #1EBC61; border-radius: 15px;
+}
+#ckEdtior .background-icon i {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #FFFFFF;}
+
+/* 세션 7 - bxslider 영역 css */
+#Bxslider {position: absolute; top: 6200px; width: 100%; height: 1000px; background-color: #50514F;}
+#Bxslider .background-icon {
+    position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    background-color: #FFFFFF; border-radius: 15px;
+}
+#Bxslider .background-icon i {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #FF1654;}
